@@ -12,7 +12,7 @@ public class GameManager : MonoBehaviour
     public Camera Camera;
     public float OuterRingOffeset = 5f;
 
-    public Entity[] EnemiesPrefabs;
+    public Enemy[] EnemiesPrefabs;
     public float SpawnInterval = 2f;
     private float _timer;
 

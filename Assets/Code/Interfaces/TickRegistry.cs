@@ -54,10 +54,10 @@ public class TickRegistry
     }
 
     // Получение всех сущностей типа T
-    public IReadOnlyList<T> GetAll<T>() where T : ITick
+    public (TickCategory, IEnumerable<T>) GetAll<T>() where T : ITick
     {
         var category = GetCategory<T>();
-        return (category?.Entities ?? new List<ITick>()) as IReadOnlyList<T>;
+        return (category, category?.Entities.Cast<T>() ?? Enumerable.Empty<T>());
     }
 
     // Обработка всех категорий - FixedTick

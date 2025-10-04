@@ -122,7 +122,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6208455612116920175}
-  - component: {fileID: 609104321449322769}
+  - component: {fileID: 1375634164377458481}
   m_Layer: 0
   m_Name: PolePow
   m_TagString: Untagged
@@ -146,7 +146,7 @@ Transform:
   - {fileID: 7472816278165280713}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &609104321449322769
+--- !u!114 &1375634164377458481
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -155,6 +155,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 8765890962655736257}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 083916c89c22da242b27d227101e585a, type: 3}
+  m_Script: {fileID: 11500000, guid: 7341c90fcc746fd4ca9350adc693f370, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Entity
+  m_EditorClassIdentifier: Assembly-CSharp::PolePow

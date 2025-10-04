@@ -409,7 +409,7 @@ MonoBehaviour:
   Camera: {fileID: 968018219518797193}
   OuterRingOffeset: 7.26
   EnemiesPrefabs:
-  - {fileID: 609104321449322769, guid: 1baa9b380af5bcd4693fbbe3dd93da58, type: 3}
+  - {fileID: 0}
   SpawnInterval: 2
 --- !u!4 &1513681692
 Transform:
@@ -645,7 +645,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: PolePow
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 609104321449322769, guid: 1baa9b380af5bcd4693fbbe3dd93da58, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []

@@ -67,11 +67,11 @@ public class CharacterController : MonoBehaviour
     {
         if(!BulletPrefab) return;
 
-        var enemies = GameManager.Instance.TickRegistry.GetAll<Enemy>();
+        var (category,enemies) = GameManager.Instance.TickRegistry.GetAll<Enemy>();
 
         Entity enemy = null;
 
-        if (enemies.Count > 0)
+        if (category.Count > 0)
         {
             var minimumDistance = float.MaxValue;
             
