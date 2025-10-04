@@ -1,0 +1,5089 @@
+fileFormatVersion: 2
+guid: 15d5bc7be1216134fa8ece907ddcefee
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_5
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 792
+        width: 38
+        height: 39
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03f71c6bc230dd94c82b49a0e7abf418
+      internalID: -1738816034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_6
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 792
+        width: 35
+        height: 39
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c44eddc992540d84091379c33ed4e8cd
+      internalID: 1865779598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_7
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 792
+        width: 32
+        height: 39
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2b57e439a97ded4ba90eb26225007d9
+      internalID: -2009526781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_8
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 792
+        width: 29
+        height: 39
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b60e4d43b5c86bc4d9cac0424eb6bf4a
+      internalID: 81712385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_9
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 792
+        width: 27
+        height: 39
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36c6c5b52ca1ada498d8436858c90cdf
+      internalID: -1004763795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_10
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 779
+        width: 32
+        height: 8
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd90f83f526e72f4cacc6a356bdc579e
+      internalID: -1199559434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_13
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 734
+        width: 40
+        height: 39
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3f21fac341719845984b070c219bc33
+      internalID: -1715505272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_14
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 734
+        width: 42
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 591b5e7700446304e9d84706c37830f7
+      internalID: -821363109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_15
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 734
+        width: 43
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fa012ec4a3a14742888cb541c884b77
+      internalID: -204210441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_16
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 734
+        width: 41
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c68361079982bac49b25a8d7f99c805d
+      internalID: 1705549351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_17
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 734
+        width: 40
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb664b05bc3e73f4abc43caac3e7213f
+      internalID: 319623354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_18
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 734
+        width: 40
+        height: 39
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ddf521635a30f34e9370831c9d91028
+      internalID: -2076052462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_19
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 734
+        width: 42
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f0e105705db34d4fa5a3eb61a26c8fa
+      internalID: -1415887281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_20
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 734
+        width: 42
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d77cc6a8357c1f144aba4892a3e2ede6
+      internalID: -1518786220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_21
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 734
+        width: 42
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aaf6ea154c38a8248bda5587c3a5ff2d
+      internalID: 1073362082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_22
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 734
+        width: 40
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f97dd65f979818f409f80240c51c1034
+      internalID: 1927350422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_23
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 721
+        width: 8
+        height: 8
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 555a85a755b17a6419a3b173a3ab56b3
+      internalID: 1150337115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_26
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 721
+        width: 5
+        height: 8
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63aca77e65780424aacf76fec028856e
+      internalID: 107176694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_28
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 676
+        width: 38
+        height: 39
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3077d29e07e5a34081a47c4469cc436
+      internalID: -1390980212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_29
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 676
+        width: 37
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b801393196aad5944a06058248656b2a
+      internalID: -546058746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_30
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 676
+        width: 35
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c695763e3f1289346bcd64e5a2a689f8
+      internalID: 2024680795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_31
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 676
+        width: 39
+        height: 39
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31e6b7cbd8822d4499c4e4ef5553184e
+      internalID: 1647652346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_32
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 676
+        width: 41
+        height: 39
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99ce88f706674e14191ec766a50cfafd
+      internalID: -566428310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_33
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 676
+        width: 41
+        height: 39
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2dbf117b9f882a14096e42215b5cce04
+      internalID: -627364914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_34
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 663
+        width: 39
+        height: 8
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ecc0bb5340e2894fa6b3511f8967969
+      internalID: 1473377915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_37
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 615
+        width: 40
+        height: 39
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 027f24e19bb128e43b1a17554481c652
+      internalID: -347164998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_38
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 615
+        width: 39
+        height: 39
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45285bd0f97adef43ada5c68454a48e2
+      internalID: -1522830248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_39
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 586
+        width: 30
+        height: 19
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdbd3c5e08b42924188c5009d4200c30
+      internalID: -2045470425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_40
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 615
+        width: 36
+        height: 43
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5af14715becec4049ac8909ef2ccca99
+      internalID: -960877696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_41
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 599
+        width: 6
+        height: 9
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8a81d42d6ed48545a3332266ad9be9c
+      internalID: -1045213410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_42
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 587
+        width: 7
+        height: 19
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e669bd70ba432c40a9343b20965814e
+      internalID: -2110514871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_43
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 599
+        width: 6
+        height: 10
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be7e2041cecbef74cb9334810af93840
+      internalID: -1507231489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_44
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 615
+        width: 39
+        height: 39
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97f698f55cc7f3c4381b68cf5929114c
+      internalID: -89055726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_45
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 615
+        width: 41
+        height: 39
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b913e2edd8fff04293e86ef36e5db15
+      internalID: 2021823144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_46
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 588
+        width: 23
+        height: 12
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bcef8b779fda4c439eecd1d7d74981b
+      internalID: 1222827747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_47
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 588
+        width: 33
+        height: 14
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f75c32f4c56bc9e4fbff34703e144ff4
+      internalID: 475618255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_48
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 598
+        width: 4
+        height: 4
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b09f5a3e985aa947874455ceed3f95a
+      internalID: -891557834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_49
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 585
+        width: 7
+        height: 7
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e066020ba05d21c4ba0cb95934134eea
+      internalID: -1304168392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_50
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 572
+        width: 12
+        height: 5
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bd5ffbcc0e60e14ea151ce78afce773
+      internalID: 140402531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_51
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 572
+        width: 12
+        height: 5
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5574db758ad2f72419bef6d6ec5ffe81
+      internalID: 579059818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_52
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 572
+        width: 12
+        height: 5
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad710dc4c9e0fe148ac4986a1ae259b4
+      internalID: 2105296551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_53
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 572
+        width: 12
+        height: 5
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a328ce28e48892d4fb9b785f38c574d8
+      internalID: -1562496364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_54
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 559
+        width: 48
+        height: 8
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff766750f4aabae4c93ad79dae110784
+      internalID: 718766266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_55
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 559
+        width: 5
+        height: 8
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 415a0c692a63d6c43ad6500ded23ba90
+      internalID: -1252666057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_56
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 559
+        width: 16
+        height: 8
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 354eb469f4fa2834a893d953a3e10b72
+      internalID: -203966512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_57
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 514
+        width: 38
+        height: 39
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7736ddb995dc4b342b1af8ff1cdcdfd4
+      internalID: 363771641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_58
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 514
+        width: 37
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f3a7e33c7dba4e4bb22cfd9114ce6d9
+      internalID: 1626289813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_59
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 514
+        width: 36
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 608969babf20696439b6e6e9bd79eccc
+      internalID: -711610527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_60
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 514
+        width: 34
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9c482280483b3149a02e13fb5c36a9f
+      internalID: 226264010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_61
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 514
+        width: 31
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9a90a295785efb4988ec9fa6e5c05d1
+      internalID: 2089116279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_62
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 514
+        width: 31
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 289618c035b0b15478bde2bd39d0e42f
+      internalID: -1492694759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_63
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 514
+        width: 31
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69e1d1dc547d2ca47ae045527f83fecd
+      internalID: -1034081233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_64
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 514
+        width: 34
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be1c5e1534164724ba0020c98387fe90
+      internalID: 1333038611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_65
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 514
+        width: 36
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df836906d5785b04080f07551b42262e
+      internalID: 1909371029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_66
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 514
+        width: 36
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a54f82d2ff775f4490b480f8cdfea86
+      internalID: 25524395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_67
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 514
+        width: 37
+        height: 39
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1f957f4be3cb024c85c0827fbf5e48c
+      internalID: 1149927355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_68
+      rect:
+        serializedVersion: 2
+        x: 441
+        y: 514
+        width: 36
+        height: 39
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8256c3bb791af954c9e3b41364a58f36
+      internalID: -269202683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_69
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 514
+        width: 37
+        height: 39
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9019dc5f41e39340b8167a9078ecf53
+      internalID: -390009039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_70
+      rect:
+        serializedVersion: 2
+        x: 524
+        y: 514
+        width: 36
+        height: 39
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c59e83b6f72415442bbec2da261272af
+      internalID: -1745240029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_71
+      rect:
+        serializedVersion: 2
+        x: 566
+        y: 514
+        width: 37
+        height: 39
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab2fb96160589e142a3a9b0182a765af
+      internalID: -1270208602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_72
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 514
+        width: 36
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d6424c8b9e23904390106eb03e3388b
+      internalID: -1405938980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_73
+      rect:
+        serializedVersion: 2
+        x: 649
+        y: 514
+        width: 36
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74b9b02499f96014c9a45907e025bee3
+      internalID: 804305984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_74
+      rect:
+        serializedVersion: 2
+        x: 690
+        y: 514
+        width: 34
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8124b7ec43bfffd4fb88a2f5b16e937b
+      internalID: 484756060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_75
+      rect:
+        serializedVersion: 2
+        x: 729
+        y: 514
+        width: 36
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a45be7ba0cb080d46b2c661cde88e43a
+      internalID: 13973329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_76
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 514
+        width: 36
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a93af41f25546b4b9c0fd6ba35e1c65
+      internalID: -1195117212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_77
+      rect:
+        serializedVersion: 2
+        x: 811
+        y: 514
+        width: 37
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e6a1e24f0cfc7241b08f7766074b606
+      internalID: 1042570348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_78
+      rect:
+        serializedVersion: 2
+        x: 853
+        y: 514
+        width: 38
+        height: 39
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c33c3f0a8a79014d95c58f861be6918
+      internalID: 1806953536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_79
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 501
+        width: 24
+        height: 8
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3158ec509ad0eca4aa70019fb99c9db8
+      internalID: -1706550169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_80
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 501
+        width: 5
+        height: 8
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64e2bc64907369d438a8d73cf718814c
+      internalID: -463112313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_81
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 501
+        width: 24
+        height: 8
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b906072ecc2dd541ac8836a335c8eec
+      internalID: 1308603240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_82
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 501
+        width: 15
+        height: 8
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 715fe847a0711964d8970e18a32db8cc
+      internalID: 277308570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_83
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 501
+        width: 7
+        height: 8
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fa8981556081d546aa1c35a704d5305
+      internalID: -1745430103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_84
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 501
+        width: 24
+        height: 8
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ced09e28b45e49c4899803c372c0334a
+      internalID: -1599491184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_85
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 449
+        width: 38
+        height: 39
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ceaa6639473e3ac47a38577df43ba5ee
+      internalID: 1518883020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_86
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 449
+        width: 37
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5b448e90197adc47b1fb44a65031f01
+      internalID: 85933955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_87
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 449
+        width: 36
+        height: 41
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19a70396166d7394483a93d3d9fc97d9
+      internalID: 308543477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_88
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 449
+        width: 34
+        height: 41
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 194881665cc75f94f92912ceb193d4b6
+      internalID: -565261088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_89
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 449
+        width: 35
+        height: 41
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 713388cf5290a6f4ab565ab93bdb6432
+      internalID: 1727318703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_90
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 449
+        width: 32
+        height: 46
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8684c0206a18c854cafc942707b20f0b
+      internalID: -744729342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_91
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 449
+        width: 33
+        height: 47
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89e0764694c73a04d833540e0b91913c
+      internalID: -1208919360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_92
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 449
+        width: 35
+        height: 39
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20fb3e984b4e2964abeeb0d7809d2b42
+      internalID: -1250134668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_93
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 449
+        width: 30
+        height: 38
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e36fac8b4fb14847821a2ed1032bb0d
+      internalID: 455621920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_94
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 449
+        width: 30
+        height: 38
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17bf0e9541d81ee40a655ab06ea22220
+      internalID: 503679191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_95
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 449
+        width: 30
+        height: 38
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9d560c218f5d994fac76ad640a3aea6
+      internalID: -633924246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_96
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 449
+        width: 30
+        height: 38
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b0c15d6720dc944084795a8e123ae46
+      internalID: 1317846190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_97
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 403
+        width: 36
+        height: 41
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 066d46337609f4541ab70d62702f13a5
+      internalID: -1568407115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_98
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 403
+        width: 37
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40049c460bc43be4499837f2d3aec1b7
+      internalID: 1745626781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_99
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 403
+        width: 38
+        height: 39
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcfa44a9f9bbcbb49a69c00201554d67
+      internalID: -1804107759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_100
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 390
+        width: 31
+        height: 8
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a418129ecaab7774db52fb7de785918c
+      internalID: -864706351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_101
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 390
+        width: 8
+        height: 8
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42adef918b9a0984885a05e81210d867
+      internalID: -642927291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_102
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 342
+        width: 30
+        height: 41
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3de0ee2a5127f8f4da13b869b04ad310
+      internalID: 606836128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_103
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 342
+        width: 38
+        height: 41
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02d09d2467015064c92f06114518e24a
+      internalID: -794470386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_104
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 342
+        width: 39
+        height: 41
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 732ca0b9600ef5c47a8a15570e9c78fd
+      internalID: 945889430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_105
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 342
+        width: 39
+        height: 41
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6b67715104f3894b96b5e1b379456ce
+      internalID: -864982690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_106
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 342
+        width: 8
+        height: 8
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12b09440bc4de484db8f97ebdbf48f8d
+      internalID: -1798668086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_107
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 342
+        width: 37
+        height: 41
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37701f4a490d35c41a971a953018bd32
+      internalID: -434685939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_108
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 342
+        width: 42
+        height: 41
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ea1b546e1976ca4d9030d14aaf8377a
+      internalID: -2043842247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_109
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 342
+        width: 6
+        height: 4
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8334542bbca7a9b4baa6a3b2ca9bb2bd
+      internalID: 844678784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_110
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 342
+        width: 36
+        height: 41
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 375374a8a0fa5b948ba48fa9af9b5683
+      internalID: 112988151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_111
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 342
+        width: 6
+        height: 4
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1a77370940cadd44b60ad7579689256
+      internalID: 1533198307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_112
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 342
+        width: 37
+        height: 42
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f205a7cdadcef204bab95b5fabf1df1d
+      internalID: 1085892044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_113
+      rect:
+        serializedVersion: 2
+        x: 359
+        y: 342
+        width: 6
+        height: 4
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8b7bab7a88bd864a83151433a684dbb
+      internalID: -188388534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_114
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 342
+        width: 39
+        height: 43
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25f0de808ed3f4c49a062e6190275bad
+      internalID: 448812894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_115
+      rect:
+        serializedVersion: 2
+        x: 406
+        y: 342
+        width: 6
+        height: 4
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb46c5452cdc6fd4592928fdccb6dbf3
+      internalID: -1959381564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_116
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 342
+        width: 39
+        height: 41
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdd14e5fcaa6b07438067eac84ae9758
+      internalID: -1367581457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_117
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 342
+        width: 6
+        height: 4
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9803c7da7790d674e9fa0a5bef0df81a
+      internalID: 2032919370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_118
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 342
+        width: 40
+        height: 39
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 099f86c2bbeec104e866271481827bc9
+      internalID: 228019445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_119
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 342
+        width: 6
+        height: 4
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: baa2e869862f21d44a7c550f0771a5a8
+      internalID: -321463485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_120
+      rect:
+        serializedVersion: 2
+        x: 502
+        y: 342
+        width: 40
+        height: 35
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c8274c57e6b5904d8a2129ec8f5eb73
+      internalID: 1557208431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_121
+      rect:
+        serializedVersion: 2
+        x: 547
+        y: 342
+        width: 6
+        height: 4
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6305c9a914f90f148af72fcebcc26732
+      internalID: -851478700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_122
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 342
+        width: 39
+        height: 33
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 135507c5210621942b907fc33a6f1bc1
+      internalID: -1558047746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_123
+      rect:
+        serializedVersion: 2
+        x: 594
+        y: 342
+        width: 6
+        height: 4
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 774bc0bec059d9442899df0def230603
+      internalID: -1538731653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_124
+      rect:
+        serializedVersion: 2
+        x: 599
+        y: 342
+        width: 37
+        height: 30
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ed7e3cb2c529134582c06c24d653d58
+      internalID: 122531047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_125
+      rect:
+        serializedVersion: 2
+        x: 641
+        y: 342
+        width: 6
+        height: 4
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7df9f97223edaa4ba510d704888e735
+      internalID: 125674043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_126
+      rect:
+        serializedVersion: 2
+        x: 647
+        y: 342
+        width: 36
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15634d77dbf8dde48b502b3b47b8bc8d
+      internalID: -732578228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_127
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 342
+        width: 6
+        height: 4
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c61ada97aaad1c64683248e6c4e83b1a
+      internalID: 409029684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_128
+      rect:
+        serializedVersion: 2
+        x: 693
+        y: 342
+        width: 37
+        height: 18
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53e0022910fb8cf4791c5bf1e09a238a
+      internalID: 698843957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_129
+      rect:
+        serializedVersion: 2
+        x: 735
+        y: 342
+        width: 6
+        height: 4
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a4bb2c6576226443b839b32a571e1a6
+      internalID: -485853146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_130
+      rect:
+        serializedVersion: 2
+        x: 740
+        y: 342
+        width: 37
+        height: 17
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3659a3f95ed3a164b954c4703a4fffe8
+      internalID: -1137375794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_131
+      rect:
+        serializedVersion: 2
+        x: 782
+        y: 342
+        width: 42
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2501a865f99ca404e9d63a6fff608d7a
+      internalID: 1670762780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_132
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 329
+        width: 7
+        height: 8
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5febb0adf4010d48b5b4e3f05d43102
+      internalID: -141116790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_133
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 329
+        width: 64
+        height: 8
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a024847924341a478a1af590de13fe5
+      internalID: -557412769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_134
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 329
+        width: 5
+        height: 8
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bcdbfa2aaf055b418acd8694c8ce626
+      internalID: 2145266959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_135
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 329
+        width: 16
+        height: 8
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e9032c3684e6214eab6a05f34bacca0
+      internalID: 1428419639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_136
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 329
+        width: 5
+        height: 8
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9bac34d22609c1439d1479546011826
+      internalID: 2035414386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_137
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 329
+        width: 15
+        height: 8
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50eb5d30b39da27409764a2d4e2a380c
+      internalID: -1455319458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_138
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 329
+        width: 8
+        height: 8
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83e34e9a8877b7f42b1565b097565713
+      internalID: -828872637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_139
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 329
+        width: 48
+        height: 8
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 351d0a224ea07a94095b25a195a063be
+      internalID: -1461467102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_140
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 296
+        width: 42
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d92471233594b3e41ae10ea9e85a9871
+      internalID: -1746133079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_141
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 296
+        width: 42
+        height: 14
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c4020278c20c1b4c970b47fcd02b823
+      internalID: -242838071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_142
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 296
+        width: 42
+        height: 14
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5184aaee2de44f048b08c3352693e4ba
+      internalID: -632521423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_143
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 296
+        width: 42
+        height: 14
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6b7d776dbfa8a34189fb8fa13f5918b
+      internalID: -1062892770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_144
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 296
+        width: 6
+        height: 4
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba3e5d8f728c47648944504e57194410
+      internalID: 1150821701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_145
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 296
+        width: 35
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6affede570ac66547b963b4d4594aea1
+      internalID: -64909906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_146
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 296
+        width: 6
+        height: 4
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e93fcca537d991e47b90854c0dbc3883
+      internalID: 1269537246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_147
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 296
+        width: 35
+        height: 18
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff9f7c14c27590f49a1109d4a988a671
+      internalID: -1308434904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_148
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 296
+        width: 6
+        height: 4
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7378b3f6ce2f317409d84f821251220c
+      internalID: -1449863218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_149
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 296
+        width: 35
+        height: 22
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b0d1deaf4a2e3c46a09c553f68966b3
+      internalID: 181874522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_150
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 296
+        width: 6
+        height: 4
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f2d7ae86874a3941af4ad15fb03f1ea
+      internalID: 1346008313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_151
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 296
+        width: 35
+        height: 22
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4936e05c95dff2428514ae902b37a55
+      internalID: -1024139011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_152
+      rect:
+        serializedVersion: 2
+        x: 381
+        y: 296
+        width: 6
+        height: 4
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc3265ea7895f394a85d4cc6f1734078
+      internalID: -566163035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_153
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 296
+        width: 35
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cfd1240a9062424abfde883b0c62fe9
+      internalID: -1240492274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_154
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 296
+        width: 6
+        height: 4
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c0714c45d76b2e4cb9416d18a680e06
+      internalID: 1521178843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_155
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 296
+        width: 35
+        height: 25
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c81bd7033a656ee40a501e931e856ba4
+      internalID: -654904298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_156
+      rect:
+        serializedVersion: 2
+        x: 475
+        y: 296
+        width: 6
+        height: 4
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e34683995ddca34889ec5f2be0f9941
+      internalID: 815128524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_157
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 296
+        width: 35
+        height: 26
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bae81492be5e7047bb005d726f66492
+      internalID: -201482062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_158
+      rect:
+        serializedVersion: 2
+        x: 522
+        y: 296
+        width: 6
+        height: 4
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c258e1309eb5f2d43a896590e8c5e452
+      internalID: -1303542844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_159
+      rect:
+        serializedVersion: 2
+        x: 529
+        y: 296
+        width: 35
+        height: 28
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a35b781dfef70db4a804c0b592739dfe
+      internalID: -1631495042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_160
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 263
+        width: 28
+        height: 28
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0864dee5e23e49c47acc7a078d99b08f
+      internalID: -258528539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_161
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 263
+        width: 27
+        height: 27
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 233e489c6357bfe43a332795ddfefbc2
+      internalID: 918888510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_162
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 263
+        width: 27
+        height: 26
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 399b1a31ad76586419059fade690a315
+      internalID: -1331681002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_163
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 263
+        width: 26
+        height: 25
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d04860f02393b841b9f91ef4abb1772
+      internalID: -410589873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_164
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 263
+        width: 26
+        height: 25
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 770ea7d406f9c944a8db5f6df91d8932
+      internalID: -1049934658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_165
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 250
+        width: 48
+        height: 8
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca7ec63220075ba458f173f8db9be3d8
+      internalID: -1476171782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_166
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 181
+        width: 45
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efdc58ddc71a9b24db09bd829df0d899
+      internalID: -694529286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_167
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 181
+        width: 45
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: edcc5174fec991f48b33d3783120ca7c
+      internalID: -165238950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_168
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 181
+        width: 49
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1ef84241b76b324c9c699698ef4bc1a
+      internalID: 1094394700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_169
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 237
+        width: 5
+        height: 7
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: daa9dcb74a911ef4b90070a0eb64e0ce
+      internalID: 720755540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_170
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 240
+        width: 4
+        height: 5
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7325dc2d98d58b548a1ff2ea0f73a36f
+      internalID: 977038394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_171
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 181
+        width: 53
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74360c6ebfe191849864aa544e9838b6
+      internalID: -1556738895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_172
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 181
+        width: 46
+        height: 63
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a62632edbac8dd4ba233f53396c7949
+      internalID: 703065205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_173
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 181
+        width: 45
+        height: 63
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9dbc1f555e5692447a36bfd784a6a2b0
+      internalID: 1293165907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_174
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 181
+        width: 46
+        height: 63
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10e615a0eff102c419730c18783148a3
+      internalID: -377000055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_175
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 181
+        width: 45
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2821419c5dfb10b4486bb885ae6882b1
+      internalID: 1525656625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_176
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 112
+        width: 45
+        height: 62
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c5ea0f33497d7f4e82f97c53ba6c83d
+      internalID: -1167203874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_177
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 112
+        width: 45
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1514b10f8108adc4c9074071ec3884a9
+      internalID: -1958562441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_178
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 168
+        width: 5
+        height: 7
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68d1a982e158b4a41b08b16446e20e51
+      internalID: -411186103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_179
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 171
+        width: 4
+        height: 5
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f5c0e62c9b7fdc40a406b0cf7bc87c9
+      internalID: 1463294422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_180
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 112
+        width: 44
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d69e93c4d2f1ea14f8acb68a164ee10b
+      internalID: -2133768322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_181
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 112
+        width: 44
+        height: 63
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: daa46552a5f1ab44086af91ce900fb6b
+      internalID: 487615381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_182
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 112
+        width: 44
+        height: 63
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1eaa5bae30b0a2a478325449d017dc7c
+      internalID: 229629136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_183
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 112
+        width: 44
+        height: 63
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 879c26e49e3897742ab9203023ca9e64
+      internalID: 1813954081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_184
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 112
+        width: 44
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cf4a1aaab20ed84b9bb4f371a7f9bda
+      internalID: -965809099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_185
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 127
+        width: 44
+        height: 49
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3c4521ad72982f4fbab59c63644372e
+      internalID: -1333552647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_186
+      rect:
+        serializedVersion: 2
+        x: 451
+        y: 158
+        width: 14
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ced70b092fc293f46bbdbe5711cf5603
+      internalID: 1293303825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_187
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 131
+        width: 40
+        height: 45
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3084477c48c73046a98a8907c415354
+      internalID: -558852409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_188
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 130
+        width: 45
+        height: 46
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df2a4785a01f97d46b78f51544be2743
+      internalID: 2106931913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_189
+      rect:
+        serializedVersion: 2
+        x: 569
+        y: 132
+        width: 85
+        height: 44
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 269fdbb2eec356f4ead911f072067a11
+      internalID: -843431547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_190
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 112
+        width: 43
+        height: 56
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 270715b4a7dc35c43babe8445e9b5b0b
+      internalID: 2006636290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_191
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 143
+        width: 27
+        height: 27
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef6e55d3f4d06a94192a7bdec6e34ed0
+      internalID: -102211368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_192
+      rect:
+        serializedVersion: 2
+        x: 570
+        y: 139
+        width: 7
+        height: 8
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0303b60bc1f840945ac69ebd45054f54
+      internalID: -1547295535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_193
+      rect:
+        serializedVersion: 2
+        x: 583
+        y: 139
+        width: 8
+        height: 6
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c612e125e3f98b8408858a59f1897cb6
+      internalID: 1229079309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_194
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 112
+        width: 42
+        height: 17
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d87eb47dbf594164e86b6d2a0a0457d6
+      internalID: 421884916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_195
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 112
+        width: 42
+        height: 17
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3539cd8560c88945a337f43deefabed
+      internalID: -1708568649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_196
+      rect:
+        serializedVersion: 2
+        x: 507
+        y: 112
+        width: 42
+        height: 17
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc8c413a395d26a4d9be786d130e24b4
+      internalID: 1472247244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_197
+      rect:
+        serializedVersion: 2
+        x: 561
+        y: 112
+        width: 42
+        height: 17
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b0e36dbd726a9d40a275554f57d9fb3
+      internalID: -1328876027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_198
+      rect:
+        serializedVersion: 2
+        x: 613
+        y: 112
+        width: 42
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fde6d165b48ad64fbbe27fdd00f5765
+      internalID: -554864116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_199
+      rect:
+        serializedVersion: 2
+        x: 662
+        y: 112
+        width: 42
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5584a0ab7ca921d4389368d295438444
+      internalID: -936487648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_200
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 99
+        width: 40
+        height: 8
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c95974d5066ae8a4391ef642fd686c1b
+      internalID: -1021395172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_201
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 99
+        width: 39
+        height: 8
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d16f6ceba6bd4e4e997ee36f5d5f3dd
+      internalID: 1561795142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_202
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 99
+        width: 7
+        height: 8
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f5e6f1939d21ca4399edc01559411f2
+      internalID: -319330579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_203
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 99
+        width: 16
+        height: 8
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ccf1427e02dc744f8fb215a06b6607c
+      internalID: 442726386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_204
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 30
+        width: 35
+        height: 39
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c1c15423781a9f4fa9fdda141291e12
+      internalID: 693310156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_205
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 54
+        width: 12
+        height: 5
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e04d6502def66d42bfba9bb1526d01c
+      internalID: 1678061808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_206
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 30
+        width: 44
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1aed8138c1e52b4ea46e586dabc1bbc
+      internalID: -755568939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_207
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 30
+        width: 44
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d57977cc45c6a245a9301f5e55d4808
+      internalID: -1920080104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_208
+      rect:
+        serializedVersion: 2
+        x: 815
+        y: 4
+        width: 76
+        height: 89
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1708433dbefb55a4b969ade6b69f12e3
+      internalID: 409038186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_209
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 36
+        width: 23
+        height: 12
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2294cf9f77f4f443a84843a66ad7b87
+      internalID: 1871199857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_210
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 47
+        width: 12
+        height: 5
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c049e7d94b5a5aa4b982343c4d628c6c
+      internalID: 678992419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_211
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 40
+        width: 12
+        height: 5
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 508bd75e46c01ee47ade9b0fafa23928
+      internalID: -502423180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_212
+      rect:
+        serializedVersion: 2
+        x: 703
+        y: 35
+        width: 32
+        height: 8
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e4434dae81ec8b4986a2eab4d5d152f
+      internalID: -163225525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_213
+      rect:
+        serializedVersion: 2
+        x: 736
+        y: 35
+        width: 5
+        height: 8
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85b7b84b7bb5f03459dad1bcfac5fb42
+      internalID: 690730033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_214
+      rect:
+        serializedVersion: 2
+        x: 743
+        y: 35
+        width: 24
+        height: 8
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5ffadce3a9bb3e46ae435f6714cb090
+      internalID: -1039511288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_215
+      rect:
+        serializedVersion: 2
+        x: 771
+        y: 35
+        width: 39
+        height: 8
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a97224f903726794ea042cbfbc4aaf4f
+      internalID: -889460721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_216
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 33
+        width: 12
+        height: 5
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b554665927464d459f4b75d16026494
+      internalID: -2103743294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_217
+      rect:
+        serializedVersion: 2
+        x: 726
+        y: 25
+        width: 32
+        height: 8
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3ecaf8dc77236445994148f850ec480
+      internalID: -1003788897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_218
+      rect:
+        serializedVersion: 2
+        x: 762
+        y: 25
+        width: 16
+        height: 8
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02d67ea646543f548969696fb0e157b4
+      internalID: -1389898377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_219
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 16
+        width: 24
+        height: 12
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbfd9ff9695258043897084cc72c598d
+      internalID: 1903489121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_220
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 4
+        width: 16
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e9f1f791e5dd12419bd19cd721d98cd
+      internalID: 1621706771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_221
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 20
+        width: 44
+        height: 8
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 017b07adc7d10bb47a97afc03384375b
+      internalID: 1209587436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_222
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 20
+        width: 44
+        height: 8
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05356f24932c0da4abeeaee894cf7296
+      internalID: 335662762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_223
+      rect:
+        serializedVersion: 2
+        x: 718
+        y: 15
+        width: 48
+        height: 8
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f43c605165174244eb8ef6e5724df531
+      internalID: 2091051140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_224
+      rect:
+        serializedVersion: 2
+        x: 767
+        y: 15
+        width: 5
+        height: 8
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9064eaed118db446869b447ae8c8b96
+      internalID: -1957297681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_225
+      rect:
+        serializedVersion: 2
+        x: 774
+        y: 15
+        width: 15
+        height: 8
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61be470d86fc4d249a756f244268676f
+      internalID: 88454095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_226
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 7
+        width: 48
+        height: 8
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 629183852aeff5941a68e509c0db455c
+      internalID: -1344354091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 32408bd81e5d690459e975c23cd3c51b
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.0},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":7,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_0: -342214340
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_1: 29826478
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_10: -1199559434
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_100: -864706351
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_101: -642927291
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_102: 606836128
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_103: -794470386
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_104: 945889430
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_105: -864982690
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_106: -1798668086
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_107: -434685939
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_108: -2043842247
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_109: 844678784
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_11: -953274640
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_110: 112988151
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_111: 1533198307
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_112: 1085892044
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_113: -188388534
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_114: 448812894
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_115: -1959381564
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_116: -1367581457
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_117: 2032919370
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_118: 228019445
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_119: -321463485
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_12: -1360494322
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_120: 1557208431
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_121: -851478700
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_122: -1558047746
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_123: -1538731653
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_124: 122531047
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_125: 125674043
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_126: -732578228
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_127: 409029684
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_128: 698843957
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_129: -485853146
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_13: -1715505272
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_130: -1137375794
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_131: 1670762780
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_132: -141116790
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_133: -557412769
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_134: 2145266959
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_135: 1428419639
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_136: 2035414386
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_137: -1455319458
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_138: -828872637
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_139: -1461467102
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_14: -821363109
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_140: -1746133079
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_141: -242838071
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_142: -632521423
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_143: -1062892770
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_144: 1150821701
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_145: -64909906
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_146: 1269537246
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_147: -1308434904
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_148: -1449863218
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_149: 181874522
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_15: -204210441
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_150: 1346008313
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_151: -1024139011
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_152: -566163035
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_153: -1240492274
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_154: 1521178843
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_155: -654904298
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_156: 815128524
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_157: -201482062
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_158: -1303542844
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_159: -1631495042
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_16: 1705549351
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_160: -258528539
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_161: 918888510
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_162: -1331681002
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_163: -410589873
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_164: -1049934658
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_165: -1476171782
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_166: -694529286
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_167: -165238950
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_168: 1094394700
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_169: 720755540
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_17: 319623354
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_170: 977038394
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_171: -1556738895
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_172: 703065205
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_173: 1293165907
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_174: -377000055
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_175: 1525656625
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_176: -1167203874
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_177: -1958562441
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_178: -411186103
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_179: 1463294422
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_18: -2076052462
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_180: -2133768322
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_181: 487615381
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_182: 229629136
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_183: 1813954081
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_184: -965809099
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_185: -1333552647
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_186: 1293303825
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_187: -558852409
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_188: 2106931913
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_189: -843431547
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_19: -1415887281
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_190: 2006636290
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_191: -102211368
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_192: -1547295535
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_193: 1229079309
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_194: 421884916
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_195: -1708568649
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_196: 1472247244
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_197: -1328876027
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_198: -554864116
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_199: -936487648
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_2: 363445362
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_20: -1518786220
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_200: -1021395172
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_201: 1561795142
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_202: -319330579
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_203: 442726386
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_204: 693310156
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_205: 1678061808
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_206: -755568939
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_207: -1920080104
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_208: 409038186
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_209: 1871199857
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_21: 1073362082
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_210: 678992419
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_211: -502423180
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_212: -163225525
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_213: 690730033
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_214: -1039511288
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_215: -889460721
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_216: -2103743294
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_217: -1003788897
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_218: -1389898377
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_219: 1903489121
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_22: 1927350422
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_220: 1621706771
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_221: 1209587436
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_222: 335662762
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_223: 2091051140
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_224: -1957297681
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_225: 88454095
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_226: -1344354091
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_23: 1150337115
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_24: -164418812
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_25: 1808657454
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_26: 107176694
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_27: -2137917543
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_28: -1390980212
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_29: -546058746
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_3: -921764727
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_30: 2024680795
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_31: 1647652346
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_32: -566428310
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_33: -627364914
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_34: 1473377915
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_35: 93488736
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_36: -339581860
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_37: -347164998
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_38: -1522830248
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_39: -2045470425
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_4: -588949573
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_40: -960877696
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_41: -1045213410
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_42: -2110514871
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_43: -1507231489
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_44: -89055726
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_45: 2021823144
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_46: 1222827747
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_47: 475618255
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_48: -891557834
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_49: -1304168392
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_5: -1738816034
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_50: 140402531
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_51: 579059818
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_52: 2105296551
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_53: -1562496364
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_54: 718766266
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_55: -1252666057
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_56: -203966512
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_57: 363771641
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_58: 1626289813
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_59: -711610527
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_6: 1865779598
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_60: 226264010
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_61: 2089116279
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_62: -1492694759
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_63: -1034081233
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_64: 1333038611
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_65: 1909371029
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_66: 25524395
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_67: 1149927355
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_68: -269202683
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_69: -390009039
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_7: -2009526781
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_70: -1745240029
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_71: -1270208602
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_72: -1405938980
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_73: 804305984
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_74: 484756060
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_75: 13973329
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_76: -1195117212
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_77: 1042570348
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_78: 1806953536
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_79: -1706550169
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_8: 81712385
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_80: -463112313
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_81: 1308603240
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_82: 277308570
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_83: -1745430103
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_84: -1599491184
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_85: 1518883020
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_86: 85933955
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_87: 308543477
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_88: -565261088
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_89: 1727318703
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_9: -1004763795
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_90: -744729342
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_91: -1208919360
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_92: -1250134668
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_93: 455621920
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_94: 503679191
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_95: -633924246
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_96: 1317846190
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_97: -1568407115
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_98: 1745626781
+      Neo Geo _ NGCD - Metal Slug 4 - Enemies & Bosses - Researcher_99: -1804107759
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
