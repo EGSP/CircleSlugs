@@ -1,4 +1,6 @@
 using System.Collections.Generic;
+using System.Linq;
+using UnityEngine.Events;
 
 public enum ProcessingMode
 {
@@ -27,6 +29,8 @@ public class TickCategory
 
     public IReadOnlyList<ITick> Entities => _entities.List;
 
+    public UnityEvent OnChanged = new UnityEvent();
+
     public TickCategory(int priority = 0)
     {
         _entities = new DeferredRemovalList<ITick>();
@@ -39,12 +43,15 @@ public class TickCategory
         {
             entity.OnTerminateMark.AddListener(() => MarkForRemoval(entity));
             _entities.Add(entity);
+
+            OnChanged.Invoke();
         }
     }
 
     public void MarkForRemoval(ITick entity)
     {
         _entities.MarkForRemoval(entity);
+        OnChanged.Invoke();
     }
 
     public bool Contains(ITick entity)

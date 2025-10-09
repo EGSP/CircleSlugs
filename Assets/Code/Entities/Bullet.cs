@@ -7,12 +7,12 @@ public class Bullet : Entity
     public float Speed = 5f;
     public float LiveTime = 5f;
 
+    public float Damage = 1f;
     public float Size = 0.3f;
 
     public Vector3 Direction { get; set; }
 
     private float _timer = 0f;
-
 
     protected override void RegisterToTickSystem()
     {

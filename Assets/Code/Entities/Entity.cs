@@ -1,16 +1,20 @@
 using UnityEngine;
 using UnityEngine.Events;
 
+[RequireComponent(typeof(Health))]
 public abstract class Entity : MonoBehaviour, ITick
 {
     public TickLifecycle Lifecycle { get; protected set; } = TickLifecycle.Alive;
-
     public UnityEvent OnTerminateMark { get; } = new UnityEvent();
     public UnityEvent OnTerminate { get; } = new UnityEvent();
 
-    private void Awake()
+    public Health Health { get; protected set; }
+
+    protected void Awake()
     {
         RegisterToTickSystem();
+
+        Health = GetComponent<Health>();
     }
 
     protected abstract void RegisterToTickSystem();

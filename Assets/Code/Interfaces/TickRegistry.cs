@@ -47,7 +47,7 @@ public class TickRegistry
     }
 
     // Получение существующей категории
-    public TickCategory GetCategory<T>() where T : ITick
+    private TickCategory GetCategory<T>() where T : ITick
     {
         var type = typeof(T);
         return _categories.TryGetValue(type, out var category) ? category : null;

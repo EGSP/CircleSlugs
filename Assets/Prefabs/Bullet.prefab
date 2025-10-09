@@ -123,6 +123,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4127585972149342964}
   - component: {fileID: 8626683483128194246}
+  - component: {fileID: 2987115571814417640}
   m_Layer: 0
   m_Name: Bullet
   m_TagString: Untagged
@@ -160,3 +161,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Bullet
   Speed: 5
   LiveTime: 5
+  Damage: 1
+  Size: 0.3
+--- !u!114 &2987115571814417640
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6710753732113134369}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9cc5a31d7eaef5489a4934466311438, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Health
+  Eternal: 1
+  Max: 100

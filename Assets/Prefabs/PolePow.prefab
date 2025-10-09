@@ -123,6 +123,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6208455612116920175}
   - component: {fileID: 1375634164377458481}
+  - component: {fileID: 7099800811918460467}
   m_Layer: 0
   m_Name: PolePow
   m_TagString: Untagged
@@ -158,3 +159,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7341c90fcc746fd4ca9350adc693f370, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PolePow
+--- !u!114 &7099800811918460467
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8765890962655736257}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9cc5a31d7eaef5489a4934466311438, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Health
+  Eternal: 0
+  Max: 2
