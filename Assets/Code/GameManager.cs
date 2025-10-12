@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
@@ -9,12 +10,13 @@ public class GameManager : MonoBehaviour
 
     public Transform Player;
 
-    public Camera Camera;
     public float OuterRingOffeset = 5f;
 
     public Enemy[] EnemiesPrefabs;
     public float SpawnInterval = 2f;
     private float _timer;
+
+    private TickCategory CameraSystem;
 
 
 
@@ -29,6 +31,8 @@ public class GameManager : MonoBehaviour
         {
             Destroy(gameObject);
         }
+
+        CameraSystem = TickRegistry.GetOrCreateCategory<CameraSystem>();
     }
 
     public void Update()
@@ -66,14 +70,28 @@ public class GameManager : MonoBehaviour
 
     private float GetCameraVisionRadius()
     {
-        float halfHeight = Camera.orthographicSize;
-        float halfWidth = halfHeight * Camera.aspect;
+        var camera = CameraSystem.Entities.Cast<CameraSystem>().First().Camera;
+        float halfHeight = camera.orthographicSize;
+        float halfWidth = halfHeight * camera.aspect;
+        return Mathf.Sqrt(halfWidth * halfWidth + halfHeight * halfHeight);
+    }
+
+    private float GetCameraVisionRadius(Camera camera)
+    {
+        float halfHeight = camera.orthographicSize;
+        float halfWidth = halfHeight * camera.aspect;
         return Mathf.Sqrt(halfWidth * halfWidth + halfHeight * halfHeight);
     }
 
     private void GetRingBounds(out float innerRingRadius, out float outerRingRadius)
     {
         innerRingRadius = GetCameraVisionRadius();
+        outerRingRadius = innerRingRadius + OuterRingOffeset;
+    }
+
+    private void GetRingBounds(Camera camera, out float innerRingRadius, out float outerRingRadius)
+    {
+        innerRingRadius = GetCameraVisionRadius(camera);
         outerRingRadius = innerRingRadius + OuterRingOffeset;
     }
 
@@ -92,9 +110,19 @@ public class GameManager : MonoBehaviour
 
     private void OnDrawGizmos()
     {
-        if (Camera is null || Player is null) return;
+        Camera camera = null;
+        if(CameraSystem is null)
+        {
+            camera = GameObject.FindAnyObjectByType<Camera>();
+        }
+        else
+        {
+            camera = CameraSystem.Entities.Cast<CameraSystem>().First().Camera;
+        }
 
-        GetRingBounds(out float innerRingRadius, out float outerRingRadius);
+        if (camera is null || Player is null) return;
+
+        GetRingBounds(camera, out float innerRingRadius, out float outerRingRadius);
 
         Gizmos.color = Color.red;
         DrawCircle(Player.position, innerRingRadius);

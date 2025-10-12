@@ -12,9 +12,9 @@ public abstract class Entity : MonoBehaviour, ITick
 
     protected void Awake()
     {
-        RegisterToTickSystem();
 
         Health = GetComponent<Health>();
+        RegisterToTickSystem();
     }
 
     protected abstract void RegisterToTickSystem();

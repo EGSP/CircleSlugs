@@ -14,6 +14,10 @@ public abstract class GameSystem : MonoBehaviour, ITickProcessor, ITick
 
     protected virtual void Awake() { }
 
+    public virtual void FixedTick(float deltaTime) { }
+    public virtual void Tick(float deltaTime) { }
+    public virtual void LateTick(float deltaTime) { }
+
     public virtual void FixedTick(IReadOnlyList<ITick> entities, float deltaTime)
     {
         foreach (var entity in entities)
