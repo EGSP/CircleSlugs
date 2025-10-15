@@ -36,6 +36,7 @@ public class BulletSystem : GameSystem
                     bullet.MarkForTermination();
 
                     enemy.Health.Current -= bullet.Damage;
+                    enemy.Physics.Force(bullet.Direction * bullet.Punch, ForceType.Continuous, 0.5f);
                     break;
                 }
             }

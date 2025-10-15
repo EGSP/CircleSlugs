@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.Events;
 
-[RequireComponent(typeof(Health))]
+[RequireComponent(typeof(Health), typeof(Physics))]
 public abstract class Entity : MonoBehaviour, ITick
 {
     public TickLifecycle Lifecycle { get; protected set; } = TickLifecycle.Alive;
@@ -9,10 +9,12 @@ public abstract class Entity : MonoBehaviour, ITick
     public UnityEvent OnTerminate { get; } = new UnityEvent();
 
     public Health Health { get; protected set; }
+    public Physics Physics { get; protected set; }
 
     protected virtual void Awake()
     {
         Health = GetComponent<Health>();
+        Physics = GetComponent<Physics>();
         RegisterToTickSystem();
     }
 

@@ -100,6 +100,8 @@ GameObject:
   m_Component:
   - component: {fileID: 6907045065367547290}
   - component: {fileID: 2807712008296388430}
+  - component: {fileID: 7243498583314828500}
+  - component: {fileID: 3235121001526862544}
   m_Layer: 0
   m_Name: Character
   m_TagString: Untagged
@@ -138,3 +140,32 @@ MonoBehaviour:
   Speed: 4
   BulletPrefab: {fileID: 8626683483128194246, guid: 9c1794c52d0f4f547b6772f4f7a52c52, type: 3}
   AttackInterval: 2
+--- !u!114 &7243498583314828500
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3178231214659760322}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f76996a4a8542ea438097ca8092c56f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Drakan
+--- !u!114 &3235121001526862544
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3178231214659760322}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9cc5a31d7eaef5489a4934466311438, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Health
+  Eternal: 0
+  Max: 100
+  OnHealthChanged:
+    m_PersistentCalls:
+      m_Calls: []

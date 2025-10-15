@@ -101,6 +101,7 @@ GameObject:
   - component: {fileID: 4280463113127020481}
   - component: {fileID: 4546042282628897762}
   - component: {fileID: 4607839708546546365}
+  - component: {fileID: 665268810542425008}
   m_Layer: 0
   m_Name: Jopashnik
   m_TagString: Untagged
@@ -137,7 +138,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Jopashnik
   Speed: 2
-  Target: {fileID: 0}
 --- !u!114 &4607839708546546365
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -155,3 +155,20 @@ MonoBehaviour:
   OnHealthChanged:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &665268810542425008
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7197617511842575052}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54f1d15e08d2e1747b71553602e66937, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Physics
+  Magnitude: 2
+  Size: 0.5
+  Drag: 0
+  CanBePushed: 1
+  CanPushOthers: 1
