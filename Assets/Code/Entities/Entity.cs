@@ -10,9 +10,8 @@ public abstract class Entity : MonoBehaviour, ITick
 
     public Health Health { get; protected set; }
 
-    protected void Awake()
+    protected virtual void Awake()
     {
-
         Health = GetComponent<Health>();
         RegisterToTickSystem();
     }
