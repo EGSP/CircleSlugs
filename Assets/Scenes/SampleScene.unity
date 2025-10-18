@@ -539,6 +539,7 @@ MonoBehaviour:
   EnableEntitySeparation: 1
   SeparationForceBase: 3
   SeparationForceMultiplier: 1
+  ApplyVelocityTick: 1
 --- !u!1001 &399874646497391651
 PrefabInstance:
   m_ObjectHideFlags: 0

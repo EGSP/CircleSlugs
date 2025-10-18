@@ -3,6 +3,17 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
+/// <summary>
+/// Режим применения скорости.
+/// Выбор зависит от того в каком режиме обновяется позиция камеры.
+/// Когда режим применения скорости и режим камеры одинаковы, то нет джитера/лагов.
+/// </summary>
+public enum ApplyVelocityTick
+{
+    FixedTick,
+    LateTick
+}
+
 public class PhysicsSystem : GameSystem
 {
     public bool EnableEntitySeparation = true;
@@ -11,7 +22,7 @@ public class PhysicsSystem : GameSystem
     public float SeparationForceMultiplier = 1f;
 
     private TickCategory EnemiesCategory { get; set; }
-    private TickCategory CharacterCategory{ get; set; }
+    private TickCategory CharacterCategory { get; set; }
 
     private IEnumerable<Entity> Entities
     {
@@ -20,6 +31,11 @@ public class PhysicsSystem : GameSystem
             return EnemiesCategory.Entities.EnumerateTogether(CharacterCategory.Entities).Cast<Entity>();
         }
     }
+
+
+    public ApplyVelocityTick ApplyVelocityTick = ApplyVelocityTick.FixedTick;
+    private float _fixedDeltaTime;
+    private float _velocityApplyDeltaTime;
 
     protected override void Awake()
     {
@@ -32,10 +48,11 @@ public class PhysicsSystem : GameSystem
 
     public override void FixedTick(float deltaTime)
     {
+        _fixedDeltaTime = deltaTime;
         // Обработка расталкивания сущностей друг от друга
         if (EnableEntitySeparation)
         {
-            ProcessEntitySeparation(deltaTime);
+            ProcessEntitySeparation(_velocityApplyDeltaTime);
         }
 
         // Обработка физики для каждой сущности
@@ -43,17 +60,57 @@ public class PhysicsSystem : GameSystem
         {
             if (entity == null || entity.Physics == null) continue;
 
-            ProcessEntityPhysics(entity, deltaTime);
+            ClearVelocity(entity);
+
+            CalculateVelocity(entity, _velocityApplyDeltaTime);
+
+            if (ApplyVelocityTick == ApplyVelocityTick.FixedTick)
+            {
+                ApplyVelocity(entity);
+            }
         }
 
         base.FixedTick(deltaTime);
+    }
+
+    public override void LateTick(float deltaTime)
+    {
+        _velocityApplyDeltaTime = deltaTime;
+
+        if (ApplyVelocityTick == ApplyVelocityTick.LateTick)
+        {
+            foreach (var entity in Entities)
+            {
+                ApplyVelocity(entity);
+            }
+        }
+
+        base.LateTick(deltaTime);
+    }
+
+    private void ApplyVelocity(Entity entity)
+    {
+        entity.transform.position += entity.Physics.Velocity;
+        // entity.Physics.Velocity = Vector3.zero;
+    }
+
+    /// <summary>
+    /// Я добавил эту функцию отдельно от ApplyVelocity,
+    /// чтобы компонент Physics.OnDrawGizmos() успел отрисовать в текущем кадре вектор скорости.
+    /// Если обнулять вектор скорости сразу же после использования, то компонент физики увидит лишь Vector.zero.
+    /// Поэтому скорость обнуляется только при подсчете нового значения, т.е. в следующем кадре.
+    /// </summary>
+    /// <param name="entity"></param>
+    private void ClearVelocity(Entity entity)
+    {
+        entity.Physics.Velocity = Vector3.zero;
     }
 
 
     /// <summary>
     /// Обработка физики одной сущности
     /// </summary>
-    private void ProcessEntityPhysics(Entity entity, float deltaTime)
+    private void CalculateVelocity(Entity entity, float deltaTime)
     {
         Physics physics = entity.Physics;
         Vector3 velocity = Vector3.zero;
@@ -115,7 +172,7 @@ public class PhysicsSystem : GameSystem
         // Применяем скорость к позиции
         if (velocity.sqrMagnitude > 0.001f)
         {
-            entity.transform.position += velocity * deltaTime;
+            physics.Velocity = velocity * deltaTime;
         }
     }
 

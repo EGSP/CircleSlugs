@@ -11,16 +11,16 @@ public class Physics : MonoBehaviour
     public float Magnitude = 1f;  // Значительность сущности (для сравнения кто кого толкает)
     public float Size = 0.5f;     // Радиус тела
     public float Drag = 0f;       // Сопротивление движению
-    
+
     [Header("Collision Properties")]
     public bool CanBePushed = false;
     public bool CanPushOthers = false;
 
-    //TODO: Добавить Velocity, но которая будет обновляться самой PhysicsSystem и PhysicsSystem будет устанавливать это значени в конце своих процедур. Сама она не пользуется. Это значение понадобится системе ходьбы. (или сделать так, чтобы система ходьбы на время ходьбы могла добавить вирутальную силу, просто чтобы при подсчете все сил - учитывалась и ходьба)
-
     // Список всех приложенных сил
 
     public List<AppliedForce> AppliedForces { get; } = new List<AppliedForce>();
+
+    public Vector3 Velocity { get; set; }
 
     /// <summary>
     /// Применить силу к сущности
@@ -35,6 +35,18 @@ public class Physics : MonoBehaviour
         Gizmos.color = Color.greenYellow;
         GizmosMore.DrawCircle(transform.position, Size);
     }
+
+    public void OnDrawGizmos()
+    {
+        Gizmos.color = Color.green;
+
+        if (Velocity.sqrMagnitude > 0.01f)
+        {
+            var nextPosition = transform.position + Velocity;
+            Gizmos.DrawLine(transform.position, nextPosition);
+            GizmosMore.DrawCircle(nextPosition, Size);
+        }
+    }
 }
 
 /// <summary>
@@ -45,7 +57,7 @@ public struct AppliedForce
     public Vector3 Force;
     public ForceType Type;
     public float Duration; // Оставшееся время действия силы
-    
+
     public AppliedForce(Vector3 force, ForceType type, float duration = 1f)
     {
         Force = force;
