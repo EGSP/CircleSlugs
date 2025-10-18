@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &4075293537949567577
+--- !u!1 &83614386375177076
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,8 +8,8 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 2962448490170049144}
-  - component: {fileID: 860586614532130514}
+  - component: {fileID: 5807649164237834020}
+  - component: {fileID: 5722789291036143232}
   m_Layer: 0
   m_Name: Sprite
   m_TagString: Untagged
@@ -17,28 +17,28 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &2962448490170049144
+--- !u!4 &5807649164237834020
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4075293537949567577}
+  m_GameObject: {fileID: 83614386375177076}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 4280463113127020481}
+  m_Father: {fileID: 4127585972149342964}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &860586614532130514
+--- !u!212 &5722789291036143232
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4075293537949567577}
+  m_GameObject: {fileID: 83614386375177076}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -79,18 +79,18 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 5e2eb16ff0c17ac4596b5de8de8e7cfe, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Sprite: {fileID: 21300000, guid: 4f04ac7f11f34d94c99f262af16d179d, type: 3}
+  m_Color: {r: 0.94572127, g: 1, b: 0.051886797, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1.40625}
+  m_Size: {x: 0.08, y: 0.08}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &7197617511842575052
+--- !u!1 &6710753732113134369
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -98,77 +98,81 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 4280463113127020481}
-  - component: {fileID: 4546042282628897762}
-  - component: {fileID: 4607839708546546365}
-  - component: {fileID: 665268810542425008}
+  - component: {fileID: 4127585972149342964}
+  - component: {fileID: 7214035006485998456}
+  - component: {fileID: 2987115571814417640}
+  - component: {fileID: 7515509419892061661}
   m_Layer: 0
-  m_Name: Jopashnik
+  m_Name: EnemyBullet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4280463113127020481
+--- !u!4 &4127585972149342964
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7197617511842575052}
+  m_GameObject: {fileID: 6710753732113134369}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8, y: 4.5, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 2962448490170049144}
+  - {fileID: 5807649164237834020}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &4546042282628897762
+--- !u!114 &7214035006485998456
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7197617511842575052}
+  m_GameObject: {fileID: 6710753732113134369}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eb9c3e481b5912141aeb8a3a0e0c1cca, type: 3}
+  m_Script: {fileID: 11500000, guid: e8ff9ec1e9cb1a14ab63b5a4701c1b1c, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Jopashnik
-  Speed: 2
---- !u!114 &4607839708546546365
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyBullet
+  Speed: 5
+  LiveTime: 5
+  Damage: 1
+  Size: 0.3
+  Punch: 6
+--- !u!114 &2987115571814417640
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7197617511842575052}
+  m_GameObject: {fileID: 6710753732113134369}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c9cc5a31d7eaef5489a4934466311438, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Health
-  Eternal: 0
-  Max: 2
+  Eternal: 1
+  Max: 100
   OnHealthChanged:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &665268810542425008
+--- !u!114 &7515509419892061661
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7197617511842575052}
+  m_GameObject: {fileID: 6710753732113134369}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 54f1d15e08d2e1747b71553602e66937, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Physics
-  Magnitude: 2
+  Magnitude: 1
   Size: 0.5
   Drag: 0
-  CanBePushed: 1
-  CanPushOthers: 1
+  CanBePushed: 0
+  CanPushOthers: 0

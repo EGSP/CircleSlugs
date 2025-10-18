@@ -1,8 +1,7 @@
-
-
+using UnityEditor;
 using UnityEngine;
 
-public class Bullet : Entity
+public abstract class Bullet : Entity
 {
     public float Speed = 5f;
     public float LiveTime = 5f;
@@ -41,8 +40,8 @@ public class Bullet : Entity
 
     private void OnDrawGizmosSelected()
     {
-        Gizmos.color = Color.greenYellow;
-        Gizmos.DrawWireSphere(transform.position, Size);
+        Gizmos.color = Color.indianRed;
+        GizmosMore.DrawCircle(transform.position, Size);
     }
 
 

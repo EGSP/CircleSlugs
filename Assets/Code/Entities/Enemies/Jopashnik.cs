@@ -2,30 +2,18 @@
 using System.Linq;
 using UnityEngine;
 
-public class Jopashnik: Enemy
+public class Jopashnik : CharacterBasedEnemy
 {
     public float Speed = 2f;
 
-    private FirstTickAccessor<Character> Target { get; set; }
-
-    protected override void RegisterToTickSystem()
+    protected override void TickOnTarget(float deltaTime)
     {
-        base.RegisterToTickSystem();
-        Target = GameManager.Instance.TickRegistry.GetOrCreateCategory<Character>().AsFirstEntity<Character>().Cache(true);
-    }
-
-    public override void Tick(float deltaTime)
-    {
-        if (Target.Entity == null) return;
-    
         Move(deltaTime);
-
-        base.Tick(deltaTime);
     }
 
     private void Move(float deltaTime)
     {
-        var direction = (Target.Entity.transform.position - transform.position).normalized;
+        var direction = (Target.transform.position - transform.position).normalized;
         transform.position += direction * Speed * deltaTime;
     }
 }
