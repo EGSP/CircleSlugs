@@ -15,6 +15,7 @@ public class DrawHealthbar : MonoBehaviour
             _entity = value;
             _entity.Health.OnHealthChanged.AddListener(Change);
             _entity.OnTerminateMark.AddListener(() => _entity.Health.OnHealthChanged.RemoveListener(Change));
+            Change(_entity.Health, _entity.Health.Current, 0);
         }
     }
     private Entity _entity;
