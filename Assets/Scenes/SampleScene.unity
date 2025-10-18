@@ -844,7 +844,7 @@ PrefabInstance:
       objectReference: {fileID: 5476069683827591999}
     - target: {fileID: 9000340379794526215, guid: fb9dfa25d8f1a0a46bcfebf1f1ff6e6f, type: 3}
       propertyPath: SpawnInterval
-      value: 1.7
+      value: 1.22
       objectReference: {fileID: 0}
     - target: {fileID: 9000340379794526215, guid: fb9dfa25d8f1a0a46bcfebf1f1ff6e6f, type: 3}
       propertyPath: EnemiesPrefabs.Array.size
@@ -884,7 +884,7 @@ PrefabInstance:
       objectReference: {fileID: 8800095632985489551, guid: 9c1794c52d0f4f547b6772f4f7a52c52, type: 3}
     - target: {fileID: 2807712008296388430, guid: 711c7d80717b2f34e8b6d0eb34555cf8, type: 3}
       propertyPath: AttackInterval
-      value: 2
+      value: 2.49
       objectReference: {fileID: 0}
     - target: {fileID: 3178231214659760322, guid: 711c7d80717b2f34e8b6d0eb34555cf8, type: 3}
       propertyPath: m_Name

@@ -137,6 +137,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7341c90fcc746fd4ca9350adc693f370, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PolePow
+  Sprite: {fileID: 0}
+  InvertSprite: 1
 --- !u!114 &7099800811918460467
 MonoBehaviour:
   m_ObjectHideFlags: 0

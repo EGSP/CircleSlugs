@@ -8,6 +8,7 @@ public class Jopashnik : CharacterBasedEnemy
 
     protected override void TickOnTarget(float deltaTime)
     {
+        base.TickOnTarget(deltaTime);
         Move(deltaTime);
     }
 

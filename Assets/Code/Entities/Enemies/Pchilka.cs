@@ -15,6 +15,8 @@ public class Pchilka : CharacterBasedEnemy
 
     protected override void TickOnTarget(float deltaTime)
     {
+        base.TickOnTarget(deltaTime);
+
         UpdateAttackTimer(deltaTime);
 
         float distance = Vector3.Distance(transform.position, Target.transform.position);
@@ -26,8 +28,6 @@ public class Pchilka : CharacterBasedEnemy
         {
             Move(deltaTime);
         }
-
-
     }
 
     private void UpdateAttackTimer(float deltaTime)

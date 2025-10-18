@@ -1,5 +1,16 @@
+using UnityEngine;
+
 public abstract class Enemy : Entity
 {
+    public SpriteRenderer Sprite;
+    public bool InvertSprite = false;
+
+    protected override void Awake()
+    {
+        base.Awake();
+        Sprite = GetComponentInChildren<SpriteRenderer>();
+    }
+
     protected override void RegisterToTickSystem()
     {
         GameManager.Instance.TickRegistry.Register<Enemy>(this);
@@ -26,5 +37,13 @@ public abstract class CharacterBasedEnemy : Enemy
         TickOnTarget(deltaTime);
     }
 
-    protected abstract void TickOnTarget(float deltaTime);
+    protected virtual void TickOnTarget(float deltaTime)
+    {
+        MirrorSprite(Target);
+    }
+    
+    protected void MirrorSprite(Character character)
+    {
+        Sprite.flipX = character.transform.position.x < transform.position.x ^ InvertSprite;
+    }
 }

@@ -137,6 +137,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb9c3e481b5912141aeb8a3a0e0c1cca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Jopashnik
+  Sprite: {fileID: 0}
+  InvertSprite: 1
   Speed: 2
 --- !u!114 &4607839708546546365
 MonoBehaviour:
