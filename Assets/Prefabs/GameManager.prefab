@@ -44,6 +44,54 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ae3a71373486f246aa983498d291d1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemySystem
+--- !u!1 &4177216494971138289
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5917008887780518769}
+  - component: {fileID: 2476054518824314229}
+  m_Layer: 0
+  m_Name: PhysicsSystem
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5917008887780518769
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4177216494971138289}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 851651091720209313}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2476054518824314229
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4177216494971138289}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 120abd9d94725244daf7bee65fb241d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PhysicsSystem
+  EnableEntitySeparation: 0
+  SeparationForceBase: 3
+  SeparationForceMultiplier: 1
+  ApplyVelocityTick: 1
 --- !u!1 &4429259295045647448
 GameObject:
   m_ObjectHideFlags: 0
@@ -120,6 +168,7 @@ Transform:
   m_Children:
   - {fileID: 5972827998843800792}
   - {fileID: 1415819490284961002}
+  - {fileID: 5917008887780518769}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &9000340379794526215
@@ -135,8 +184,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameManager
   Player: {fileID: 0}
-  Camera: {fileID: 0}
-  OuterRingOffeset: 7.26
+  OuterRingOffeset: 4.32
   EnemiesPrefabs:
-  - {fileID: 0}
-  SpawnInterval: 2
+  - {fileID: 1375634164377458481, guid: 1baa9b380af5bcd4693fbbe3dd93da58, type: 3}
+  - {fileID: 4546042282628897762, guid: c87565a4b4530634c9dde4eb78c1ec80, type: 3}
+  - {fileID: 6209594664774365843, guid: 533dfbca66582e849adc5e3464c9b320, type: 3}
+  SpawnInterval: 0.15

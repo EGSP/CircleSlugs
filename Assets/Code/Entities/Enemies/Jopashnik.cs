@@ -14,7 +14,7 @@ public class Jopashnik : CharacterBasedEnemy
 
     private void Move(float deltaTime)
     {
-        var direction = (Target.transform.position - transform.position).normalized;
-        transform.position += direction * Speed * deltaTime;
+        var direction = (Target.Position - Position).normalized;
+        Position += direction * Speed * deltaTime;
     }
 }

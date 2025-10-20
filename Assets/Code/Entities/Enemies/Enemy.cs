@@ -44,6 +44,6 @@ public abstract class CharacterBasedEnemy : Enemy
     
     protected void MirrorSprite(Character character)
     {
-        Sprite.flipX = character.transform.position.x < transform.position.x ^ InvertSprite;
+        Sprite.flipX = character.Position.x < Position.x ^ InvertSprite;
     }
 }

@@ -29,7 +29,7 @@ public abstract class Bullet : Entity
         }
 
         base.Tick(deltaTime);
-        transform.position += deltaTime * Speed * Direction;
+        Position += deltaTime * Speed * Direction;
     }
 
     private bool ShouldDie(float deltaTime)

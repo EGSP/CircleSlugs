@@ -24,13 +24,7 @@ public class PhysicsSystem : GameSystem
     private TickCategory EnemiesCategory { get; set; }
     private TickCategory CharacterCategory { get; set; }
 
-    private IEnumerable<Entity> Entities
-    {
-        get
-        {
-            return EnemiesCategory.Entities.EnumerateTogether(CharacterCategory.Entities).Cast<Entity>();
-        }
-    }
+    private CombinedList<ITick> Entities { get; set; }
 
 
     public ApplyVelocityTick ApplyVelocityTick = ApplyVelocityTick.FixedTick;
@@ -44,6 +38,8 @@ public class PhysicsSystem : GameSystem
 
         EnemiesCategory = GameManager.Instance.TickRegistry.GetOrCreateCategory<Enemy>();
         CharacterCategory = GameManager.Instance.TickRegistry.GetOrCreateCategory<Character>();
+
+        Entities = new CombinedList<ITick>(EnemiesCategory.Entities, CharacterCategory.Entities);
     }
 
     public override void FixedTick(float deltaTime)
@@ -56,8 +52,10 @@ public class PhysicsSystem : GameSystem
         }
 
         // Обработка физики для каждой сущности
-        foreach (var entity in Entities)
+        foreach (var tick in Entities)
         {
+            if (tick is not Entity entity) throw new System.Exception("Entity expected");
+
             if (entity == null || entity.Physics == null) continue;
 
             ClearVelocity(entity);
@@ -79,8 +77,9 @@ public class PhysicsSystem : GameSystem
 
         if (ApplyVelocityTick == ApplyVelocityTick.LateTick)
         {
-            foreach (var entity in Entities)
+            foreach (var tick in Entities)
             {
+                if (tick is not Entity entity) throw new System.Exception("Entity expected");
                 ApplyVelocity(entity);
             }
         }
@@ -90,7 +89,8 @@ public class PhysicsSystem : GameSystem
 
     private void ApplyVelocity(Entity entity)
     {
-        entity.transform.position += entity.Physics.Velocity;
+        entity.Position += entity.Physics.Velocity;
+        entity.UpdateEnginePosition();
         // entity.Physics.Velocity = Vector3.zero;
     }
 
@@ -180,58 +180,55 @@ public class PhysicsSystem : GameSystem
     /// Расталкивание сущностей друг от друга
     /// Каждая сущность отталкивается только от более значительных сущностей
     /// </summary>
+    // private void ProcessEntitySeparation(float deltaTime)
+    // {
+    //     foreach (var entityA in Entities)
+    //     {
+    //         if (entityA == null || !entityA.Physics.CanBePushed)
+    //             continue;
+
+    //         foreach (var entityB in Entities)
+    //         {
+    //             if (ReferenceEquals(entityA, entityB))
+    //                 continue;
+    //             if (entityB == null || !entityB.Physics.CanPushOthers)
+    //                 continue;
+
+    //             if (entityA.Physics.Magnitude > entityB.Physics.Magnitude)
+    //                 continue;
+
+    //             Vector3 direction = entityA.Position - entityB.Position;
+    //             float distance = direction.magnitude;
+    //             float minDistance = entityA.Physics.Size + entityB.Physics.Size;
+
+    //             if (distance < minDistance && distance > 0.001f)
+    //             {
+    //                 direction /= distance;
+    //                 float overlap = minDistance - distance;
+    //                 entityA.Physics.Force(direction * (overlap * SeparationForceMultiplier + SeparationForceBase), ForceType.Decay, 1f);
+    //             }
+    //         }
+    //     }
+    // }
+
     private void ProcessEntitySeparation(float deltaTime)
     {
-        // for (int i = 0; i < Entities.Count(); i++)
-        // {
-        //     Entity entityA = entities[i];
-        //     if (entityA == null || !entityA.Physics.CanBePushed) continue;
-
-        //     for (int j = 0; j < entities.Count; j++)
-        //     {
-        //         if (i == j) continue;
-
-        //         Entity entityB = entities[j];
-        //         if (entityB == null || !entityB.Physics.CanPushOthers) continue;
-
-        //         // Сущность A отталкивается только если B более значительна
-        //         if (entityA.Physics.Magnitude >= entityB.Physics.Magnitude) continue;
-
-        //         // Проверяем пересечение
-        //         Vector3 direction = entityA.transform.position - entityB.transform.position;
-        //         float distance = direction.magnitude;
-        //         float minDistance = entityA.Physics.Size + entityB.Physics.Size;
-
-        //         if (distance < minDistance && distance > 0.001f)
-        //         {
-        //             direction /= distance; // Нормализация
-
-        //             // Сила пропорциональна глубине пересечения
-        //             float overlap = minDistance - distance;
-
-        //             // Применяем силу отталкивания
-        //             // Сила = направление * глубина_пересечения
-        //             entityA.Physics.AddForce(direction * overlap, ForceType.Continuous, Time.fixedDeltaTime);
-        //         }
-        //     }
-        // }
-
-        foreach (var entityA in Entities)
+        int count = Entities.Count;
+        for (int i = 0; i < count; i++)
         {
-            if (entityA == null || !entityA.Physics.CanBePushed)
+            var entityA = (Entity)Entities[i];
+            // Если сущность не влияет на другие сущности, то пропускаем
+            if (entityA == null || (!entityA.Physics.CanBePushed && !entityA.Physics.CanPushOthers))
                 continue;
 
-            foreach (var entityB in Entities)
+            for (int j = i + 1; j < count; j++)
             {
-                if (ReferenceEquals(entityA, entityB))
-                    continue;
-                if (entityB == null || !entityB.Physics.CanPushOthers)
-                    continue;
-
-                if (entityA.Physics.Magnitude > entityB.Physics.Magnitude)
+                var entityB = (Entity)Entities[j];
+                // Если сущность не влияет на другие сущности, то пропускаем
+                if (entityB == null || (!entityB.Physics.CanBePushed && !entityB.Physics.CanPushOthers))
                     continue;
 
-                Vector3 direction = entityA.transform.position - entityB.transform.position;
+                Vector3 direction = entityA.Position - entityB.Position;
                 float distance = direction.magnitude;
                 float minDistance = entityA.Physics.Size + entityB.Physics.Size;
 
@@ -239,11 +236,23 @@ public class PhysicsSystem : GameSystem
                 {
                     direction /= distance;
                     float overlap = minDistance - distance;
-                    entityA.Physics.Force(direction * (overlap * SeparationForceMultiplier + SeparationForceBase), ForceType.Decay, 1f);
+                    Vector3 force = direction * (overlap * SeparationForceMultiplier + SeparationForceBase);
+
+                    // Применяем силу с учетом свойств
+                    if (entityA.Physics.CanBePushed && entityB.Physics.CanPushOthers)
+                    {
+                        float ratioA = entityB.Physics.Magnitude / (entityA.Physics.Magnitude + entityB.Physics.Magnitude);
+                        entityA.Physics.Force(force * ratioA, ForceType.Decay, 1f);
+                    }
+
+                    if (entityB.Physics.CanBePushed && entityA.Physics.CanPushOthers)
+                    {
+                        float ratioB = entityA.Physics.Magnitude / (entityA.Physics.Magnitude + entityB.Physics.Magnitude);
+                        entityB.Physics.Force(-force * ratioB, ForceType.Decay, 1f);
+                    }
                 }
             }
         }
-
     }
 
 }

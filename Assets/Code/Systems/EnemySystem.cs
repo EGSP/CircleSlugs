@@ -17,7 +17,7 @@ public class EnemySystem : GameSystem
         foreach (var enemy in entities.Cast<Enemy>())
         {
             if (enemy.Health.Current <= 0)
-            {   
+            {
                 Debug.Log("Enemy died");
                 enemy.MarkForTermination();
             }

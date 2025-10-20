@@ -1,3 +1,4 @@
+using System;
 using Unity.Cinemachine;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -5,6 +6,8 @@ using UnityEngine.Rendering;
 
 public class CharacterController : MonoBehaviour
 {
+    public Character Character;
+
     public float Speed = 1f;
 
     public Bullet BulletPrefab;
@@ -19,6 +22,7 @@ public class CharacterController : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        Character = GetComponent<Character>();
         _sprite = GetComponentInChildren<SpriteRenderer>();
         _animator = GetComponentInChildren<Animator>();
 
@@ -37,8 +41,8 @@ public class CharacterController : MonoBehaviour
 
     private void Move()
     {
-        var newPosition = transform.position + Speed * Time.deltaTime * (Vector3)_inputVector;
-        transform.position = newPosition;
+        var newPosition = Character.Position + Speed * Time.deltaTime * (Vector3)_inputVector;
+        Character.Position = newPosition;
     }
 
     private void Animate()
@@ -77,7 +81,7 @@ public class CharacterController : MonoBehaviour
             
             foreach (var e in enemies)
             {
-                var distance = (e.transform.position - transform.position).sqrMagnitude;
+                var distance = (e.Position - Character.Position).sqrMagnitude;
                 if (distance < minimumDistance)
                 {
                     minimumDistance = distance;
@@ -92,8 +96,8 @@ public class CharacterController : MonoBehaviour
         if (_attackTimer > AttackInterval)
         {
             _attackTimer = 0f;
-            var bullet = Instantiate(BulletPrefab, transform.position, Quaternion.identity);
-            bullet.Direction = (enemy.transform.position - transform.position).normalized;
+            var bullet = Instantiate(BulletPrefab, Character.Position, Quaternion.identity);
+            bullet.Direction = (enemy.Position - Character.Position).normalized;
         }
     }
 }

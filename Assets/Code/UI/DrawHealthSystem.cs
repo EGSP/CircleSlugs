@@ -53,7 +53,7 @@ public class DrawHealthSystem : GameSystem
         foreach (var healthbar in Healthbars)
         {
             var enemy = healthbar.Entity;
-            var position = camera.WorldToScreenPoint(enemy.transform.position + Offset);
+            var position = camera.WorldToScreenPoint(enemy.Position + Offset);
 
             healthbar.transform.position = position;
         }

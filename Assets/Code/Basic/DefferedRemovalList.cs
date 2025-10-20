@@ -5,22 +5,22 @@ using Unity.VisualScripting;
 
 public class DeferredRemovalList<T>
 {
-    private List<T> _list;
-    private List<T> _removals;
+    private ObservableList<T> _list;
+    private ObservableList<T> _removals;
 
-    public IReadOnlyList<T> List => _list.AsReadOnly();
-    public IReadOnlyList<T> Removals => _removals.AsReadOnly();
+    public IReadOnlyObservableList<T> List => _list.AsReadOnly();
+    public IReadOnlyObservableList<T> Removals => _removals.AsReadOnly();
 
     public DeferredRemovalList()
     {
-        _list = new List<T>();
-        _removals = new List<T>();
+        _list = new ObservableList<T>();
+        _removals = new ObservableList<T>();
     }
 
     public DeferredRemovalList(IEnumerable<T> collection)
     {
-        _list = new List<T>(collection);
-        _removals = new List<T>();
+        _list = new ObservableList<T>(collection);
+        _removals = new ObservableList<T>();
     }
 
     // Добавление элемента в основной список

@@ -1,6 +1,7 @@
 
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 /// <summary>
 /// Компонент, хранящий физические данные сущности
@@ -17,10 +18,15 @@ public class Physics : MonoBehaviour
     public bool CanPushOthers = false;
 
     // Список всех приложенных сил
-
     public List<AppliedForce> AppliedForces { get; } = new List<AppliedForce>();
 
     public Vector3 Velocity { get; set; }
+
+    public TickLifecycle Lifecycle => throw new System.NotImplementedException();
+
+    public UnityEvent OnTerminateMark => throw new System.NotImplementedException();
+
+    public UnityEvent OnTerminate => throw new System.NotImplementedException();
 
     /// <summary>
     /// Применить силу к сущности
@@ -46,6 +52,16 @@ public class Physics : MonoBehaviour
             Gizmos.DrawLine(transform.position, nextPosition);
             GizmosMore.DrawCircle(nextPosition, Size);
         }
+    }
+
+    public void MarkForTermination()
+    {
+        throw new System.NotImplementedException();
+    }
+
+    public void Terminate()
+    {
+        throw new System.NotImplementedException();
     }
 }
 

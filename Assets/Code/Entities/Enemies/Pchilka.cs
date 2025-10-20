@@ -19,7 +19,7 @@ public class Pchilka : CharacterBasedEnemy
 
         UpdateAttackTimer(deltaTime);
 
-        float distance = Vector3.Distance(transform.position, Target.transform.position);
+        float distance = Vector3.Distance(Position, Target.Position);
         if (distance < AttackRadius)
         {
             TryAttack();
@@ -40,16 +40,16 @@ public class Pchilka : CharacterBasedEnemy
         if (_attackTimer <= 0)
         {
             _attackTimer = AttackInterval;
-            var bullet = Instantiate(BulletPrefab, transform.position, Quaternion.identity);
+            var bullet = Instantiate(BulletPrefab, Position, Quaternion.identity);
 
-            bullet.Direction = (Target.transform.position - transform.position).normalized;
+            bullet.Direction = (Target.Position - Position).normalized;
         }
     }
 
     private void Move(float deltaTime)
     {
-        var direction = (Target.transform.position - transform.position).normalized;
-        transform.position += direction * Speed * deltaTime;
+        var direction = (Target.Position - Position).normalized;
+        Position += direction * Speed * deltaTime;
     }
 
     public void OnDrawGizmos()

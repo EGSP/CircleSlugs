@@ -30,7 +30,7 @@ public class BulletSystem : GameSystem
         {
             foreach (var entity in entities.Cast<T>())
             {
-                var hit = Vector3.Distance(entity.transform.position, bullet.transform.position) < bullet.Size;
+                var hit = Vector3.Distance(entity.Position, bullet.Position) < bullet.Size;
                 if (hit)
                 {
                     bullet.MarkForTermination();
