@@ -26,6 +26,15 @@ public class GameManager : MonoBehaviour
 
     private void Awake()
     {
+        IniSelfSingletone();
+
+        IniCounters();
+
+        CameraSystem = TickRegistry.GetOrCreateCategory<CameraSystem>();
+    }
+
+    private void IniSelfSingletone()
+    {
         if (Instance == null)
         {
             Instance = this;
@@ -35,8 +44,11 @@ public class GameManager : MonoBehaviour
         {
             Destroy(gameObject);
         }
+    }
 
-        CameraSystem = TickRegistry.GetOrCreateCategory<CameraSystem>();
+    private void IniCounters()
+    {
+        CounterRegistry.Register(new LevelCounter());
     }
 
     public void Update()
@@ -115,7 +127,7 @@ public class GameManager : MonoBehaviour
     private void OnDrawGizmos()
     {
         Camera camera = null;
-        if(CameraSystem is null)
+        if (CameraSystem is null)
         {
             camera = GameObject.FindAnyObjectByType<Camera>();
         }

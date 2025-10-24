@@ -9,11 +9,13 @@ public class RecordRepository
     /// Добавляет запись в хранилище
     /// </summary>
     public void AddRecord<T>(T record)
+        where T : IRecord
     {
         GetOrCreateCollection<T>().Add(record);
     }
 
     public RecordCollection<T> GetOrCreateCollection<T>()
+        where T : IRecord
     {
         Type type = typeof(T);
         if (!_collections.ContainsKey(type))

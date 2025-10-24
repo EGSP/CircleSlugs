@@ -5,6 +5,16 @@ public class CounterRegistry
 {
     private Dictionary<Type, ICounter> _counters = new();
 
+    public void Register<T>(T counter) where T : class,ICounter
+    {
+        Type type = typeof(T);
+        if (_counters.ContainsKey(type))
+        {
+            throw new Exception("Counter already registered");
+        }
+        _counters.Add(type, counter);
+    }
+
     public T GetCounterOrNUll<T>()
         where T : class,ICounter
     {
