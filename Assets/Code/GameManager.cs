@@ -8,6 +8,10 @@ public class GameManager : MonoBehaviour
 
     public TickRegistry TickRegistry { get; private set; } = new();
 
+    public RecordRepository RecordRepository { get; private set; } = new();
+
+    public CounterRegistry CounterRegistry { get; private set; } = new();
+
     public Transform Player;
 
     public float OuterRingOffeset = 5f;
