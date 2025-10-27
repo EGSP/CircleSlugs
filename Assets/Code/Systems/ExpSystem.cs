@@ -8,6 +8,8 @@ public class ExpSystem : GameSystem
     public float ExpFlySpeed = 5f;
     public float ExpTakeRadius = 1f;
 
+    public float ExpAcceleration = 0.1f;
+
     private RecordCollection<EnemyDieRecord> _enemyDieRecords;
     private int _lastSequenceId = int.MinValue;
 
@@ -79,7 +81,10 @@ public class ExpSystem : GameSystem
 
             if (exp.Triggered)
             {
-                exp.Position = Vector3.MoveTowards(exp.Position, character.Position, ExpFlySpeed * deltaTime);
+                exp.Acceleration += ExpAcceleration * deltaTime;
+                exp.Position = Vector3.MoveTowards(
+                    exp.Position, character.Position,
+                    (ExpFlySpeed + exp.Acceleration) * deltaTime);
 
                 if (Vector3.Distance(character.Position, exp.Position) < ExpTakeRadius)
                 {

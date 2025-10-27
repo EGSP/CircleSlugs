@@ -164,9 +164,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ExpSystem
   ExpPrefab: {fileID: 7657195497203248155, guid: 7746a9eec015f814d885415949b879d9, type: 3}
-  ExpTriggerRadius: 3.27
-  ExpFlySpeed: 5
-  ExpTakeRadius: 1
+  ExpTriggerRadius: 4.15
+  ExpFlySpeed: 10
+  ExpTakeRadius: 0.64
+  ExpAcceleration: 5
 --- !u!1 &522867399
 GameObject:
   m_ObjectHideFlags: 0
@@ -817,6 +818,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 703962755086589074, guid: fb9dfa25d8f1a0a46bcfebf1f1ff6e6f, type: 3}
+      propertyPath: EnemyConfigs.Array.size
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 851651091720209313, guid: fb9dfa25d8f1a0a46bcfebf1f1ff6e6f, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0

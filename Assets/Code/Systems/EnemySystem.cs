@@ -1,8 +1,5 @@
-
-
 using System.Collections.Generic;
 using System.Linq;
-using Unity.Collections;
 using UnityEngine;
 
 public class EnemySystem : GameSystem
@@ -26,9 +23,13 @@ public class EnemySystem : GameSystem
         LoadEnemyConfigs();
 
         var gm = GameManager.Instance;
+        gm.TickRegistry.Register<EnemySystem>(this);
+
         CameraSystem = gm.TickRegistry.GetOrCreateCategory<CameraSystem>().AsFirstEntity<CameraSystem>();
         Character = gm.TickRegistry.GetOrCreateCategory<Character>().AsFirstEntity<Character>();
+
         gm.TickRegistry.GetOrCreateCategory<Enemy>().TickProcessor = this;
+
         _enemyDieRecords = GameManager.Instance.RecordRepository.GetOrCreateCollection<EnemyDieRecord>();
     }
 
@@ -45,7 +46,6 @@ public class EnemySystem : GameSystem
             if (enemy.Health.Current <= 0)
             {
                 _enemyDieRecords.Add(new EnemyDieRecord() { Position = enemy.Position });
-                Debug.Log($"Enemy died at {enemy.Position}");
                 enemy.MarkForTermination();
             }
         }
@@ -60,8 +60,7 @@ public class EnemySystem : GameSystem
 
     private void SpawnEnemies(float deltaTime)
     {
-
-        _timer += Time.deltaTime;
+        _timer += deltaTime;
 
         if (_timer > SpawnInterval)
         {
@@ -73,7 +72,8 @@ public class EnemySystem : GameSystem
     private void SpawnEnemy()
     {
         var spawnPoint = GetRandomPointAreaAroundCharacter();
-        Instantiate(EnemyConfigs[Random.Range(0, EnemyConfigs.Length)].Prefab, spawnPoint, Quaternion.identity);
+        var config = EnemyConfigs[Random.Range(0, EnemyConfigs.Length)];
+        Instantiate(config.Prefab, spawnPoint, Quaternion.identity);
     }
 
     private float GetCameraVisionRadius()
