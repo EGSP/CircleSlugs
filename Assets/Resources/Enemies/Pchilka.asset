@@ -1,0 +1,16 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 149214e632bb2234bbe91636a9049b5f, type: 3}
+  m_Name: Pchilka
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyConfig
+  Prefab: {fileID: 6209594664774365843, guid: 533dfbca66582e849adc5e3464c9b320, type: 3}
+  Power: 5

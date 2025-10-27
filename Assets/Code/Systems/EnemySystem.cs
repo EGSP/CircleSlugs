@@ -6,12 +6,16 @@ using UnityEngine;
 
 public class EnemySystem : GameSystem
 {
-
     private RecordCollection<EnemyDieRecord> _enemyDieRecords = null;
+
+    public EnemyConfig[] EnemyConfigs;
 
     protected override void Awake()
     {
         base.Awake();
+
+        LoadEnemyConfigs();
+
         GameManager.Instance.TickRegistry.GetOrCreateCategory<Enemy>().TickProcessor = this;
         _enemyDieRecords = GameManager.Instance.RecordRepository.GetOrCreateCollection<EnemyDieRecord>();
     }
@@ -34,5 +38,12 @@ public class EnemySystem : GameSystem
     protected override void OnTerminateMarkInternal()
     {
         GameManager.Instance.TickRegistry.GetOrCreateCategory<Enemy>().TickProcessor = null;
+    }
+
+
+    private void LoadEnemyConfigs()
+    {
+        EnemyConfigs = Resources.LoadAll<EnemyConfig>("Enemies");
+        Debug.Log($"Loaded enemy configs: {EnemyConfigs.Length}");
     }
 }
