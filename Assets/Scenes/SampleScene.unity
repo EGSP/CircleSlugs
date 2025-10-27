@@ -164,7 +164,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ExpSystem
   ExpPrefab: {fileID: 7657195497203248155, guid: 7746a9eec015f814d885415949b879d9, type: 3}
-  ExpTakeRadius: 3
+  ExpTriggerRadius: 3.27
+  ExpFlySpeed: 5
+  ExpTakeRadius: 1
 --- !u!1 &522867399
 GameObject:
   m_ObjectHideFlags: 0

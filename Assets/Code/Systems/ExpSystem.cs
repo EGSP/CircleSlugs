@@ -4,7 +4,9 @@ using UnityEngine;
 public class ExpSystem : GameSystem
 {
     public Exp ExpPrefab;
-    public float ExpTakeRadius = 3f;
+    public float ExpTriggerRadius = 4f;
+    public float ExpFlySpeed = 5f;
+    public float ExpTakeRadius = 1f;
 
     private RecordCollection<EnemyDieRecord> _enemyDieRecords;
     private int _lastSequenceId = int.MinValue;
@@ -32,7 +34,19 @@ public class ExpSystem : GameSystem
     public override void Tick(float deltaTime)
     {
         base.Tick(deltaTime);
+        CheckEnemyDeaths();
+    }
 
+    public override void Tick(IReadOnlyList<ITick> exps, float deltaTime)
+    {
+        base.Tick(exps, deltaTime);
+        if (_Character.Entity == null) return;
+
+        ProcessExps(_Character.Entity, exps, deltaTime);
+    }
+
+    public void CheckEnemyDeaths()
+    {
         if (_enemyDieRecords.Records.Count == 0) return;
 
         for (int i = _enemyDieRecords.Records.Count - 1; i >= 0; i--)
@@ -51,36 +65,45 @@ public class ExpSystem : GameSystem
         _lastSequenceId = _enemyDieRecords.Records[^1].SequenceId;
     }
 
-    public override void Tick(IReadOnlyList<ITick> entities, float deltaTime)
-    {
-        base.Tick(entities, deltaTime);
-        if(_Character.Entity == null) return;
-        CheckCharacterCanTakeExp(_Character.Entity, entities);
-    }
-
     private void SpawnExp(Vector3 position, int value)
     {
         var exp = Instantiate(ExpPrefab, position, Quaternion.identity);
         exp.Value = value;
     }
 
-    private void CheckCharacterCanTakeExp(Character character, IReadOnlyList<ITick> exps)
+    private void ProcessExps(Character character, IReadOnlyList<ITick> exps, float deltaTime)
     {
         foreach (var tick in exps)
         {
             if (tick is not Exp exp) continue;
 
-            if (Vector3.Distance(character.Position, exp.Position) < ExpTakeRadius)
+            if (exp.Triggered)
             {
-                _addedExperience.Add(new() { Value = exp.Value });
-                exp.MarkForTermination();
+                exp.Position = Vector3.MoveTowards(exp.Position, character.Position, ExpFlySpeed * deltaTime);
+
+                if (Vector3.Distance(character.Position, exp.Position) < ExpTakeRadius)
+                {
+                    _addedExperience.Add(new() { Value = exp.Value });
+                    exp.MarkForTermination();
+                }
+            }
+            else
+            {
+                if (Vector3.Distance(character.Position, exp.Position) < ExpTriggerRadius)
+                    exp.Triggered = true;
             }
         }
     }
-    
+
     private void OnDrawGizmosSelected()
     {
+
+        Vector3 point = _Character?.Entity?.Position ?? transform.position;
+
         Gizmos.color = Color.blue;
-        GizmosMore.DrawCircle(transform.position, ExpTakeRadius);
+        GizmosMore.DrawCircle(point, ExpTriggerRadius);
+
+        Gizmos.color = Color.seaGreen;
+        GizmosMore.DrawCircle(point, ExpTakeRadius);
     }
 }
