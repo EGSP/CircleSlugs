@@ -11,26 +11,12 @@ public class GameManager : MonoBehaviour
     public RecordRepository RecordRepository { get; private set; } = new();
 
     public CounterRegistry CounterRegistry { get; private set; } = new();
-
-    public Transform Player;
-
-    public float OuterRingOffeset = 5f;
-
-    public Enemy[] EnemiesPrefabs;
-    public float SpawnInterval = 2f;
-    private float _timer;
-
-    private TickCategory CameraSystem;
-
-
-
+    
     private void Awake()
     {
         IniSelfSingletone();
 
         IniCounters();
-
-        CameraSystem = TickRegistry.GetOrCreateCategory<CameraSystem>();
     }
 
     private void IniSelfSingletone()
@@ -53,17 +39,8 @@ public class GameManager : MonoBehaviour
 
     public void Update()
     {
-
         TickRegistry.ProcessAllTick(Time.deltaTime);
         TickRegistry.ApplyAllRemovals();
-
-        _timer += Time.deltaTime;
-
-        if (_timer > SpawnInterval)
-        {
-            _timer = 0f;
-            SpawnEnemy();
-        }
     }
 
     private void FixedUpdate()
@@ -77,75 +54,5 @@ public class GameManager : MonoBehaviour
         TickRegistry.ProcessAllLateTick(Time.deltaTime);
         TickRegistry.ApplyAllRemovals();
     }
-
-    private void SpawnEnemy()
-    {
-        var spawnPoint = GetRandomPointArea();
-        var enemy = Instantiate(EnemiesPrefabs[Random.Range(0, EnemiesPrefabs.Length)], spawnPoint, Quaternion.identity);
-    }
-
-    private float GetCameraVisionRadius()
-    {
-        var camera = CameraSystem.Entities.Cast<CameraSystem>().First().Camera;
-        float halfHeight = camera.orthographicSize;
-        float halfWidth = halfHeight * camera.aspect;
-        return Mathf.Sqrt(halfWidth * halfWidth + halfHeight * halfHeight);
-    }
-
-    private float GetCameraVisionRadius(Camera camera)
-    {
-        float halfHeight = camera.orthographicSize;
-        float halfWidth = halfHeight * camera.aspect;
-        return Mathf.Sqrt(halfWidth * halfWidth + halfHeight * halfHeight);
-    }
-
-    private void GetRingBounds(out float innerRingRadius, out float outerRingRadius)
-    {
-        innerRingRadius = GetCameraVisionRadius();
-        outerRingRadius = innerRingRadius + OuterRingOffeset;
-    }
-
-    private void GetRingBounds(Camera camera, out float innerRingRadius, out float outerRingRadius)
-    {
-        innerRingRadius = GetCameraVisionRadius(camera);
-        outerRingRadius = innerRingRadius + OuterRingOffeset;
-    }
-
-    public Vector3 GetRandomPointArea()
-    {
-        GetRingBounds(out float innerRingRadius, out float outerRingRadius);
-
-        float randomAngle = Random.Range(0f, 360f);
-        Quaternion randomRotation = Quaternion.AngleAxis(randomAngle, Vector3.forward); // вращение вокруг Z
-
-        // Получения радиуса (дистанция от игрока) равномерно по площади кольца.
-        float randomRadius = Mathf.Sqrt(Random.Range(innerRingRadius * innerRingRadius, outerRingRadius * outerRingRadius));
-
-        return Player.position + (randomRotation * (Vector3.right * randomRadius));
-    }
-
-    private void OnDrawGizmos()
-    {
-        Camera camera = null;
-        if (CameraSystem is null)
-        {
-            camera = GameObject.FindAnyObjectByType<Camera>();
-        }
-        else
-        {
-            camera = CameraSystem.Entities.Cast<CameraSystem>().First().Camera;
-        }
-
-        if (camera is null || Player is null) return;
-
-        GetRingBounds(camera, out float innerRingRadius, out float outerRingRadius);
-
-        Gizmos.color = Color.red;
-        GizmosMore.DrawCircle(Player.position, innerRingRadius);
-
-        Gizmos.color = Color.orangeRed;
-        GizmosMore.DrawCircle(Player.position, outerRingRadius);
-    }
-
 
 }
