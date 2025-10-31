@@ -19,18 +19,26 @@ public class ExpSystem : GameSystem
 
     private RecordCollection<AddExperienceRecord> _addedExperience;
 
+    private RecordCollection<IncreaseLevelRecord> _increaseLevel;
+
     protected override void Awake()
     {
         base.Awake();
-        GameManager.Instance.TickRegistry.Register<ExpSystem>(this);
-        _enemyDieRecords = GameManager.Instance.RecordRepository.GetOrCreateCollection<EnemyDieRecord>();
+        GameManager gm = GameManager.Instance;
 
-        Exps = GameManager.Instance.TickRegistry.GetOrCreateCategory<Exp>();
+        gm.TickRegistry.Register<ExpSystem>(this);
+
+        _enemyDieRecords = gm.RecordRepository.GetOrCreateCollection<EnemyDieRecord>();
+
+        Exps = gm.TickRegistry.GetOrCreateCategory<Exp>();
         Exps.TickProcessor = this;
 
-        _Character = GameManager.Instance.TickRegistry.GetOrCreateCategory<Character>().AsFirstEntity<Character>();
+        _Character = gm.TickRegistry.GetOrCreateCategory<Character>().AsFirstEntity<Character>();
 
-        _addedExperience = GameManager.Instance.RecordRepository.GetOrCreateCollection<AddExperienceRecord>();
+        _addedExperience = gm.RecordRepository.GetOrCreateCollection<AddExperienceRecord>();
+        _increaseLevel = gm.RecordRepository.GetOrCreateCollection<IncreaseLevelRecord>();
+
+        _increaseLevel.Records.OnChanged(() => Debug.Log($"Level increased by {_increaseLevel.Records[^1].Increase}"));
     }
 
     public override void Tick(float deltaTime)

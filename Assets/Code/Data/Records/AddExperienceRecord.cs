@@ -1,5 +1,5 @@
 public struct AddExperienceRecord : IRecord
 {
     public int SequenceId{ get; set; }
-    public int Value;
+    public int Value{ get; set; }
 }
