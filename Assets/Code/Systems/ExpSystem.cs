@@ -21,6 +21,8 @@ public class ExpSystem : GameSystem
 
     private RecordCollection<IncreaseLevelRecord> _increaseLevel;
 
+    private LevelCounter _levelCounter;
+
     protected override void Awake()
     {
         base.Awake();
@@ -39,6 +41,10 @@ public class ExpSystem : GameSystem
         _increaseLevel = gm.RecordRepository.GetOrCreateCollection<IncreaseLevelRecord>();
 
         _increaseLevel.Records.OnChanged(() => Debug.Log($"Level increased by {_increaseLevel.Records[^1].Increase}"));
+
+
+        // _levelCounter = gm.CounterRegistry.GetCounterOrNUll<LevelCounter>();
+        _increaseLevel.OnChanged(UpgradeCharacter);
     }
 
     public override void Tick(float deltaTime)
@@ -83,6 +89,7 @@ public class ExpSystem : GameSystem
 
     private void ProcessExps(Character character, IReadOnlyList<ITick> exps, float deltaTime)
     {
+        var expTriggerModifier = character.Modifiers.GetCounterOrNUll<PickupRangeCounter>().PickupRangeModifier;
         foreach (var tick in exps)
         {
             if (tick is not Exp exp) continue;
@@ -102,10 +109,18 @@ public class ExpSystem : GameSystem
             }
             else
             {
-                if (Vector3.Distance(character.Position, exp.Position) < ExpTriggerRadius)
+                if (Vector3.Distance(character.Position, exp.Position) < ExpTriggerRadius * expTriggerModifier)
                     exp.Triggered = true;
             }
         }
+    }
+
+    private void UpgradeCharacter()
+    {
+        var character = _Character.Entity;
+
+        character.Records.AddRecord(new PickupRangeRecord
+        { Change = 0.1f * _increaseLevel.Records[^1].Increase });
     }
 
     private void OnDrawGizmosSelected()
@@ -113,10 +128,23 @@ public class ExpSystem : GameSystem
 
         Vector3 point = _Character?.Entity?.Position ?? transform.position;
 
-        Gizmos.color = Color.blue;
-        GizmosMore.DrawCircle(point, ExpTriggerRadius);
+        if (Application.isPlaying)
+        {
+            Gizmos.color = Color.coral;
+            GizmosMore.DrawCircle(point, ExpTriggerRadius);
+            Gizmos.color = Color.blue;
+            GizmosMore.DrawCircle(point, ExpTriggerRadius * _Character.Entity.Modifiers.GetCounterOrNUll<PickupRangeCounter>().PickupRangeModifier);
 
-        Gizmos.color = Color.seaGreen;
-        GizmosMore.DrawCircle(point, ExpTakeRadius);
+            Gizmos.color = Color.seaGreen;
+            GizmosMore.DrawCircle(point, ExpTakeRadius);
+        }
+        else
+        {
+            Gizmos.color = Color.blue;
+            GizmosMore.DrawCircle(point, ExpTriggerRadius);
+
+            Gizmos.color = Color.seaGreen;
+            GizmosMore.DrawCircle(point, ExpTakeRadius);
+        }
     }
 }

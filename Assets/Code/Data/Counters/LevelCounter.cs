@@ -4,7 +4,7 @@ using Unity.Mathematics;
 using UnityEngine;
 using UnityEngine.Events;
 
-public class LevelCounter : ICounter
+public class LevelCounter : Counter
 {
     public const float BaseExpGrowth = 5;
     public const float QuadraticExpGrowth = 1.2f;
@@ -23,19 +23,17 @@ public class LevelCounter : ICounter
 
     public int Level { get; private set; }
 
-    public UnityEvent Changed = new();
-
     public LevelCounter()
     {
-        _addedExperience = GameManager.Instance.RecordRepository.GetOrCreateCollection<AddExperienceRecord>();
-        _increaseLevel = GameManager.Instance.RecordRepository.GetOrCreateCollection<IncreaseLevelRecord>();        
+        _addedExperience = GetRecordCollection<AddExperienceRecord>();
+        _increaseLevel = GetRecordCollection<IncreaseLevelRecord>();        
 
         _addedExperience.Records.OnChanged(Calculate);
 
         CalculateNextLevelAndBounds();
     }
 
-    private void Calculate()
+    protected override void Calculate()
     {
         if (_addedExperience.Records.Count == 0) return;
 

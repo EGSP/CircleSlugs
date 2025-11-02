@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 
 public interface IRecord
@@ -33,4 +34,6 @@ public class RecordCollection<T> : IRecordCollection
         _lastSequenceId = int.MinValue;
         _records.Clear();
     }
+
+    public void OnChanged(Action action) => _records.OnChanged(action);
 }
