@@ -22,6 +22,10 @@ public class PickupRangeCounter : Counter
         _records = records;
         _records.Records.OnChanged(Calculate);
     }
-    
-    protected override void Calculate() => PickupRange += _records.Records[^1].Change;
+
+    protected override void Calculate()
+    {
+        PickupRange += _records.Records[^1].Change;
+        Changed.Invoke();
+    }
 }

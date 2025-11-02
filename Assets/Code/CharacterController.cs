@@ -92,8 +92,10 @@ public class CharacterController : MonoBehaviour
 
         if (enemy == null) return;
 
+        var attackSpeedModifier = Character.Modifiers.GetCounterOrNUll<AttackSpeedCounter>().AttackSpeedModifier;
+
         _attackTimer += deltaTime;
-        if (_attackTimer > AttackInterval)
+        if (_attackTimer > AttackInterval * attackSpeedModifier)
         {
             _attackTimer = 0f;
             var bullet = Instantiate(BulletPrefab, Character.Position, Quaternion.identity);

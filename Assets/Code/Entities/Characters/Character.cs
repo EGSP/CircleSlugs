@@ -6,6 +6,7 @@ public abstract class Character : Entity
     protected override void Awake()
     {
         Modifiers.Register(new PickupRangeCounter(Records.GetOrCreateCollection<PickupRangeRecord>()));
+        Modifiers.Register(new AttackSpeedCounter(Records.GetOrCreateCollection<AttackSpeedRecord>()));
         base.Awake();
     }
 

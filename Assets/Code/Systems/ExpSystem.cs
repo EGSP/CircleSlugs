@@ -121,6 +121,9 @@ public class ExpSystem : GameSystem
 
         character.Records.AddRecord(new PickupRangeRecord
         { Change = 0.1f * _increaseLevel.Records[^1].Increase });
+
+        character.Records.AddRecord(new AttackSpeedRecord
+        { Change = 0.04f * _increaseLevel.Records[^1].Increase });
     }
 
     private void OnDrawGizmosSelected()
