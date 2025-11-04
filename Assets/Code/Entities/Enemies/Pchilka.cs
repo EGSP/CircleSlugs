@@ -13,6 +13,8 @@ public class Pchilka : CharacterBasedEnemy
     public float AttackInterval = 1f;
     private float _attackTimer = 0f;
 
+    public override string Id => "pchilka";
+
     protected override void TickOnTarget(float deltaTime)
     {
         base.TickOnTarget(deltaTime);

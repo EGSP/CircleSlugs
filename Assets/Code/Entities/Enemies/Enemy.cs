@@ -2,8 +2,12 @@ using UnityEngine;
 
 public abstract class Enemy : Entity
 {
+    public abstract string Id { get; }
+
     public SpriteRenderer Sprite;
     public bool InvertSprite = false;
+
+    public float Power { get; set; } = 1;
 
     protected override void Awake()
     {

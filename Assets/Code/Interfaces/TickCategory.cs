@@ -27,7 +27,13 @@ public class TickCategory
 
     public int Count => _entities.Count;
 
+    /// <summary>
+    /// Список сущностей. Может включать и marked сущности до применения applyremovals.
+    /// Когда на сущности срабатывает OnTerminateMark - она всё ещё остается в списке.
+    /// Только после вызова ApplyRemovals она удаляется.
+    /// </summary>
     public IReadOnlyList<ITick> Entities => _entities.List;
+    public IEnumerable<ITick> Alive => Entities.Where(e => e.Lifecycle == TickLifecycle.Alive);
 
     public UnityEvent<ITick> Added = new();
 

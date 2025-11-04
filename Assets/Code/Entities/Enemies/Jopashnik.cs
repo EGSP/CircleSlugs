@@ -6,6 +6,8 @@ public class Jopashnik : CharacterBasedEnemy
 {
     public float Speed = 2f;
 
+    public override string Id => "jopashnik";
+
     protected override void TickOnTarget(float deltaTime)
     {
         base.TickOnTarget(deltaTime);

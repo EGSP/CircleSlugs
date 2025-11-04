@@ -5,7 +5,6 @@ using UnityEngine.Events;
 
 public class BulletSystem : GameSystem
 {
-
     private static TickCategory EnemyCategory { get; set; }
     private static TickCategory CharacterCategory { get; set; }
 

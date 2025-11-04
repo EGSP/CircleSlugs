@@ -11,9 +11,13 @@ public class GameManager : MonoBehaviour
     public RecordRepository RecordRepository { get; private set; } = new();
 
     public CounterRegistry CounterRegistry { get; private set; } = new();
-    
+
+    public PropertyConfig[] PropertyConfigs { get; private set; }
+
     private void Awake()
     {
+        LoadPropertyConfigs();
+
         IniSelfSingletone();
 
         IniCounters();
@@ -35,6 +39,7 @@ public class GameManager : MonoBehaviour
     private void IniCounters()
     {
         CounterRegistry.Register(new LevelCounter());
+        CounterRegistry.Register(new TerrorCounter());
     }
 
     public void Update()
@@ -53,6 +58,20 @@ public class GameManager : MonoBehaviour
     {
         TickRegistry.ProcessAllLateTick(Time.deltaTime);
         TickRegistry.ApplyAllRemovals();
+    }
+
+
+    private void LoadPropertyConfigs()
+    {
+        PropertyConfigs = Resources.LoadAll<PropertyConfig>("Properties");
+        Debug.Log($"Loaded enemy configs: {PropertyConfigs.Length}");
+    }
+
+    public PropertyConfig GetProperty(string name)
+    {
+        var property = PropertyConfigs.FirstOrDefault(x => x.Property == name);
+
+        return property;
     }
 
 }
