@@ -44,6 +44,61 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ae3a71373486f246aa983498d291d1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemySystem
+  OuterRingOffeset: 5
+  SpawnInterval: 2
+  SpawnAtLeastWeakeast: 1
+  EnemyConfigs: []
+  ConfigFolders:
+  - Enemies
+--- !u!1 &3031598828438978954
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1479288260080378438}
+  - component: {fileID: 535058009621708250}
+  m_Layer: 0
+  m_Name: ExpSystem
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1479288260080378438
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3031598828438978954}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 851651091720209313}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &535058009621708250
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3031598828438978954}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5933aa5edc4c43146bc75e943e9b3f7a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ExpSystem
+  ExpPrefab: {fileID: 7657195497203248155, guid: 7746a9eec015f814d885415949b879d9, type: 3}
+  ExpTriggerRadius: 4.15
+  ExpFlySpeed: 10
+  ExpTakeRadius: 0.64
+  ExpAcceleration: 5
 --- !u!1 &4177216494971138289
 GameObject:
   m_ObjectHideFlags: 0
@@ -169,6 +224,7 @@ Transform:
   - {fileID: 5972827998843800792}
   - {fileID: 1415819490284961002}
   - {fileID: 5917008887780518769}
+  - {fileID: 1479288260080378438}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &9000340379794526215
@@ -183,10 +239,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db820c43480be3148acb6df42401b7f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameManager
-  Player: {fileID: 0}
-  OuterRingOffeset: 4.32
-  EnemiesPrefabs:
-  - {fileID: 1375634164377458481, guid: 1baa9b380af5bcd4693fbbe3dd93da58, type: 3}
-  - {fileID: 4546042282628897762, guid: c87565a4b4530634c9dde4eb78c1ec80, type: 3}
-  - {fileID: 6209594664774365843, guid: 533dfbca66582e849adc5e3464c9b320, type: 3}
-  SpawnInterval: 0.15

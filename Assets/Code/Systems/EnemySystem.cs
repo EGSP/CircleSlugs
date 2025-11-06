@@ -9,13 +9,15 @@ public class EnemySystem : GameSystem
     public float SpawnInterval = 2f;
     private float _timer;
 
+    public bool SpawnAtLeastWeakeast = true;
+
+    [ReadOnly] public EnemyConfig[] EnemyConfigs;
+    public List<string> ConfigFolders = new(){"Enemies"};
+
     private FirstTickAccessor<Character> Character;
     private FirstTickAccessor<CameraSystem> CameraSystem;
 
     private RecordCollection<EnemyDieRecord> _enemyDieRecords = null;
-
-    public bool SpawnAtLeastWeakeast = true;
-    [ReadOnly] public EnemyConfig[] EnemyConfigs;
 
     private TerrorCounter TerrorCounter;
 
@@ -230,7 +232,12 @@ public class EnemySystem : GameSystem
 
     private void LoadEnemyConfigs()
     {
-        EnemyConfigs = Resources.LoadAll<EnemyConfig>("Enemies");
+        foreach (var folder in ConfigFolders)
+        {
+            var configs = Resources.LoadAll<EnemyConfig>(folder);
+            EnemyConfigs = EnemyConfigs.Concat(configs).ToArray();
+        }
+        
         Debug.Log($"Loaded enemy configs: {EnemyConfigs.Length}");
     }
 
