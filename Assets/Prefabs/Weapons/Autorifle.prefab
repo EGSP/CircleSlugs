@@ -135,5 +135,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f52ffda0ebad1248a4a401b3cd91859, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Autorifle
+  SpriteRenderer: {fileID: 6333065445657755254}
   BulletPrefab: {fileID: 8800095632985489551, guid: 9c1794c52d0f4f547b6772f4f7a52c52, type: 3}
   ActivationInterval: 0.4

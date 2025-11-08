@@ -6,6 +6,8 @@ public class Autorifle : Weapon
 
     private float _activationTimer = 0;
 
+    public override bool CanActivate => _activationTimer <= 0;
+
     protected override void RegisterToTickSystem()
     {
         GameManager.Instance.TickRegistry.Register<Weapon>(this);

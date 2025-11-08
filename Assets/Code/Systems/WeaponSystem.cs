@@ -12,6 +12,8 @@ public class WeaponSystem : GameSystem
     public bool ManualAttackWithManualAim = true;
 
     public float WeaponsOffset = 0.5f;
+    public float AimRotationSpeed = 360f;
+    public float ManualAimRotationSpeedMultiplier = 1.5f;
 
     public Weapon[] WeaponsPrefabs;
 
@@ -53,7 +55,7 @@ public class WeaponSystem : GameSystem
             return;
         if (WeaponsPrefabs.Length == 0)
             return;
-            
+
         foreach (var prefab in WeaponsPrefabs)
         {
             var weapon = Instantiate(prefab, transform.position, Quaternion.identity, null);
@@ -129,10 +131,12 @@ public class WeaponSystem : GameSystem
     {
         base.Tick(entities, deltaTime);
 
-        PositionWeapon();
+        PositionWeapons();
+        // MirrorWeaponsBasedOnCharacter();
+        AimWeapons(deltaTime);
     }
 
-    private void PositionWeapon()
+    private void PositionWeapons()
     {
         var character = Character.Entity;
         if (character == null) return;
@@ -144,6 +148,89 @@ public class WeaponSystem : GameSystem
             var weapon = Weapons.Entities[i] as Weapon;
             weapon.transform.position = character.Position + rotations[i] * Vector3.right * WeaponsOffset;
         }
+    }
+
+    private void AimWeapons(float deltaTime)
+    {
+        var enemies = Game.TickRegistry.GetOrCreateCategory<Enemy>().Entities;
+        if (enemies.Count == 0)
+        {
+            foreach (var weapon in Weapons.Entities.Cast<Weapon>())
+            {
+                weapon.transform.rotation = Quaternion.Euler(0, 0, 0);
+            }
+            return;
+        }
+
+        if (_isManualAim)
+        {
+            var pointerPosition = InputSystem.actions.FindAction("PointerPosition").ReadValue<Vector2>();
+            var pointerWorldPosition = Camera.main.ScreenToWorldPoint(pointerPosition);
+
+            foreach (var weapon in Weapons.Entities.Cast<Weapon>())
+            {
+                var direction = pointerWorldPosition - weapon.transform.position;
+                AimTo(weapon, direction, AimRotationSpeed * ManualAimRotationSpeedMultiplier, deltaTime);
+            }
+            return;
+        }
+
+        foreach (var weapon in Weapons.Entities.Cast<Weapon>())
+        {
+            // Чтобы лишний раз не дрыгалось
+            if (weapon.CanActivate == false) continue;
+
+            var closest = GetClosestEnemy(weapon.transform.position, enemies);
+            var direction = closest.Position - weapon.transform.position;
+            AimTo(weapon, direction, AimRotationSpeed, deltaTime);
+        }
+
+
+        Enemy GetClosestEnemy(Vector3 position, IReadOnlyList<ITick> ticks)
+        {
+            Enemy closest = null;
+            float closestDistance = float.MaxValue;
+            foreach (var tick in ticks)
+            {
+                var enemy = (Enemy)tick;
+                var distance = Vector3.Distance(position, enemy.Position);
+                if (distance < closestDistance)
+                {
+                    closestDistance = distance;
+                    closest = enemy;
+                }
+            }
+            return closest;
+        }
+    }
+
+    private void MirrorWeaponsBasedOnCharacter()
+    {
+        var character = Character.Entity;
+        if (character == null) return;
+
+        foreach (var weaponTick in Weapons.Entities)
+        {
+            var weapon = (Weapon)weaponTick;
+
+            var mirror = weapon.transform.position.x < character.Position.x;
+            weapon.SpriteRenderer.flipX = mirror;
+        }
+    }
+
+    private void MirrorWeaponBasedOnDirection(Weapon weapon, Vector3 direction)
+    {
+        bool isFacingLeft = direction.x < 0;
+
+        weapon.SpriteRenderer.flipY = isFacingLeft;
+    }
+
+    private void AimTo(Weapon weapon, Vector3 direction, float rotationSpeed, float deltaTime)
+    {
+        var rotation = Quaternion.Euler(0, 0, 90) * Quaternion.LookRotation(Vector3.forward, direction);
+        weapon.transform.rotation = Quaternion.RotateTowards(weapon.transform.rotation, rotation, rotationSpeed * deltaTime);
+
+        MirrorWeaponBasedOnDirection(weapon, direction);
     }
 
     private void OnDrawGizmosSelected()

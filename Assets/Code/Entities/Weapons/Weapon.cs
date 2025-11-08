@@ -10,9 +10,14 @@ public abstract class Weapon : MonoBehaviour, ITick
 
     public UnityEvent OnTerminate { get; } = new();
 
+    public SpriteRenderer SpriteRenderer;
+
+    public abstract bool CanActivate { get; }
+
 
     protected virtual void Awake()
     {
+        SpriteRenderer ??= GetComponentInChildren<SpriteRenderer>();
         RegisterToTickSystem();
     }
 
@@ -40,5 +45,10 @@ public abstract class Weapon : MonoBehaviour, ITick
             OnTerminate?.Invoke();
             Destroy(gameObject);
         }
+    }
+
+    private void Reset()
+    {
+        SpriteRenderer ??= GetComponentInChildren<SpriteRenderer>();
     }
 }
