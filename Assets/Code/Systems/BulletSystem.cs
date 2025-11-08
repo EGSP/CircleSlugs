@@ -29,7 +29,7 @@ public class BulletSystem : GameSystem
         {
             foreach (var entity in entities.Cast<T>())
             {
-                var hit = Vector3.Distance(entity.Position, bullet.Position) < bullet.Size;
+                var hit = Vector3.Distance(entity.Position, bullet.Position) < (entity.Physics.Size + bullet.Physics.Size);
                 if (hit)
                 {
                     bullet.MarkForTermination();

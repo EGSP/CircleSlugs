@@ -12,7 +12,12 @@ public abstract class GameSystem : MonoBehaviour, ITickProcessor, ITick
 
     public UnityEvent OnTerminate { get; } = new UnityEvent();
 
-    protected virtual void Awake() { }
+    protected GameManager Game { get; private set; }
+
+    protected virtual void Awake()
+    {
+        Game = GameManager.Instance;
+    }
 
     public virtual void FixedTick(float deltaTime) { }
     public virtual void Tick(float deltaTime) { }
@@ -59,7 +64,7 @@ public abstract class GameSystem : MonoBehaviour, ITickProcessor, ITick
     {
         if (Lifecycle != TickLifecycle.Terminated)
         {
-            OnTerminateInternal(); 
+            OnTerminateInternal();
 
             Lifecycle = TickLifecycle.Terminated;
             OnTerminate?.Invoke();

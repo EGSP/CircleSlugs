@@ -3,6 +3,7 @@ using Unity.Cinemachine;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.InputSystem;
+using UnityEngine.InputSystem.Interactions;
 using UnityEngine.Rendering;
 
 public class CharacterController : MonoBehaviour
@@ -22,9 +23,16 @@ public class CharacterController : MonoBehaviour
 
     public UnityEvent OnShoot = new();
 
-    public bool StartManualAim = false;
+    public bool StartWithManualAim = false;
+    public bool ManualAttackWithManualAim = true;
+
     private bool _isManualAim = false;
     public UnityEvent<bool> ToggleManualAim = new();
+
+    private bool _doHoldAttack = false;
+    private bool _doPressAttack = false;
+
+    private bool ShouldAttack => _doHoldAttack || _doPressAttack;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -36,15 +44,72 @@ public class CharacterController : MonoBehaviour
         var cameraComponent = FindFirstObjectByType<CinemachineCamera>();
         cameraComponent.Follow = transform;
 
-        _isManualAim = StartManualAim;
+        _isManualAim = StartWithManualAim;
         InputSystem.actions.FindAction("Option").performed += ToggleAim;
         ToggleManualAim.Invoke(_isManualAim);
+
+        InputSystem.actions.FindAction("Attack").performed += DoAttack;
+        InputSystem.actions.FindAction("Attack").canceled += CancelAttack;
     }
 
     private void ToggleAim(InputAction.CallbackContext context)
     {
         _isManualAim = !_isManualAim;
         ToggleManualAim.Invoke(_isManualAim);
+    }
+
+    private void DoAttack(InputAction.CallbackContext context)
+    {
+        switch (context.interaction)
+        {
+            case HoldInteraction hold:
+                _doHoldAttack = true;
+                Debug.Log("Hold performed");
+                break;
+            case PressInteraction press:
+                _doPressAttack = true;
+                Debug.Log("Press performed");
+                break;
+
+            case TapInteraction tap:
+                Debug.Log("Tap performed");
+                _doPressAttack = true;
+                break;
+            case SlowTapInteraction slowTap:
+                Debug.Log("SlowTap performed");
+                _doPressAttack = true;
+                break;
+            default:
+                break;
+        }
+    }
+
+    private void CancelAttack(InputAction.CallbackContext context)
+    {
+        switch (context.interaction)
+        {
+            case HoldInteraction hold:
+                Debug.Log("Hold canceled");
+                _doHoldAttack = false;
+                break;
+
+            case TapInteraction tap:
+                Debug.Log("Tap canceled");
+                _doPressAttack = false;
+                break;
+            case SlowTapInteraction slowTap:
+                Debug.Log("SlowTap canceled");
+                _doPressAttack = false;
+                break;
+            default:
+                break;
+        }
+    }
+
+    private void UseAttackInput()
+    {
+        _doPressAttack = false;
+        
     }
 
     // Update is called once per frame
@@ -95,6 +160,9 @@ public class CharacterController : MonoBehaviour
 
         if (_isManualAim)
         {
+            if (ManualAttackWithManualAim && !ShouldAttack) return;
+            UseAttackInput();
+
             var pointerPosition = InputSystem.actions.FindAction("PointerPosition").ReadValue<Vector2>();
 
             // Конвертируем из Screen Space в Viewport Space (0-1)

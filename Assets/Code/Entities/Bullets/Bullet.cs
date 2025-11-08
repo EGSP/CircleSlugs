@@ -7,7 +7,6 @@ public abstract class Bullet : Entity
     public float LiveTime = 5f;
 
     public float Damage = 1f;
-    public float Size = 0.3f;
 
     public float Punch = 6f;
 
@@ -37,12 +36,5 @@ public abstract class Bullet : Entity
         _timer += deltaTime;
         return _timer > LiveTime;
     }
-
-    private void OnDrawGizmosSelected()
-    {
-        Gizmos.color = Color.indianRed;
-        GizmosMore.DrawCircle(transform.position, Size);
-    }
-
 
 }

@@ -492,11 +492,6 @@ Transform:
   - {fileID: 941923736}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &818501989 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3178231214659760322, guid: 711c7d80717b2f34e8b6d0eb34555cf8, type: 3}
-  m_PrefabInstance: {fileID: 5476069683827591998}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &941923732
 GameObject:
   m_ObjectHideFlags: 0
@@ -825,6 +820,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bullet
       objectReference: {fileID: 0}
+    - target: {fileID: 8800095632985489551, guid: 9c1794c52d0f4f547b6772f4f7a52c52, type: 3}
+      propertyPath: Size
+      value: 0.39
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1098,81 +1097,25 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 2807712008296388430, guid: 711c7d80717b2f34e8b6d0eb34555cf8, type: 3}
-      propertyPath: Character
-      value: 
-      objectReference: {fileID: 5476069683827592002}
-    - target: {fileID: 2807712008296388430, guid: 711c7d80717b2f34e8b6d0eb34555cf8, type: 3}
-      propertyPath: BulletPrefab
-      value: 
-      objectReference: {fileID: 8800095632985489551, guid: 9c1794c52d0f4f547b6772f4f7a52c52, type: 3}
-    - target: {fileID: 2807712008296388430, guid: 711c7d80717b2f34e8b6d0eb34555cf8, type: 3}
-      propertyPath: AttackInterval
-      value: 1.44
-      objectReference: {fileID: 0}
-    - target: {fileID: 2807712008296388430, guid: 711c7d80717b2f34e8b6d0eb34555cf8, type: 3}
-      propertyPath: StartManualAim
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2807712008296388430, guid: 711c7d80717b2f34e8b6d0eb34555cf8, type: 3}
-      propertyPath: OnShoot.m_PersistentCalls.m_Calls.Array.size
+      propertyPath: StartWithManualAim
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2807712008296388430, guid: 711c7d80717b2f34e8b6d0eb34555cf8, type: 3}
-      propertyPath: ToggleManualAim.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2807712008296388430, guid: 711c7d80717b2f34e8b6d0eb34555cf8, type: 3}
-      propertyPath: OnShoot.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2807712008296388430, guid: 711c7d80717b2f34e8b6d0eb34555cf8, type: 3}
-      propertyPath: OnShoot.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 5476069683827592006}
-    - target: {fileID: 2807712008296388430, guid: 711c7d80717b2f34e8b6d0eb34555cf8, type: 3}
-      propertyPath: OnShoot.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 2807712008296388430, guid: 711c7d80717b2f34e8b6d0eb34555cf8, type: 3}
-      propertyPath: OnShoot.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: Shake
       objectReference: {fileID: 0}
     - target: {fileID: 2807712008296388430, guid: 711c7d80717b2f34e8b6d0eb34555cf8, type: 3}
       propertyPath: ToggleManualAim.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 263668294}
-    - target: {fileID: 2807712008296388430, guid: 711c7d80717b2f34e8b6d0eb34555cf8, type: 3}
-      propertyPath: ToggleManualAim.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 2807712008296388430, guid: 711c7d80717b2f34e8b6d0eb34555cf8, type: 3}
-      propertyPath: ToggleManualAim.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: ShowCrosshair
-      objectReference: {fileID: 0}
-    - target: {fileID: 2807712008296388430, guid: 711c7d80717b2f34e8b6d0eb34555cf8, type: 3}
-      propertyPath: OnShoot.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: CameraShaker, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 2807712008296388430, guid: 711c7d80717b2f34e8b6d0eb34555cf8, type: 3}
-      propertyPath: ToggleManualAim.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: DrawCrosshairSystem, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 2807712008296388430, guid: 711c7d80717b2f34e8b6d0eb34555cf8, type: 3}
-      propertyPath: OnShoot.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
-    - target: {fileID: 2807712008296388430, guid: 711c7d80717b2f34e8b6d0eb34555cf8, type: 3}
-      propertyPath: ToggleManualAim.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
+    - target: {fileID: 3113792518244536289, guid: 711c7d80717b2f34e8b6d0eb34555cf8, type: 3}
+      propertyPath: Noise
+      value: 
+      objectReference: {fileID: 1686368228}
     - target: {fileID: 3178231214659760322, guid: 711c7d80717b2f34e8b6d0eb34555cf8, type: 3}
       propertyPath: m_Name
       value: Character
       objectReference: {fileID: 0}
-    - target: {fileID: 3235121001526862544, guid: 711c7d80717b2f34e8b6d0eb34555cf8, type: 3}
-      propertyPath: Eternal
-      value: 0
-      objectReference: {fileID: 0}
+    - target: {fileID: 3562670956040749432, guid: 711c7d80717b2f34e8b6d0eb34555cf8, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 1343042059, guid: b419731fd9f575346b94b163aaa6a1d0, type: 3}
     - target: {fileID: 6907045065367547290, guid: 711c7d80717b2f34e8b6d0eb34555cf8, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.58961
@@ -1213,71 +1156,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8325492148388555428, guid: 711c7d80717b2f34e8b6d0eb34555cf8, type: 3}
-      propertyPath: CanBePushed
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 3178231214659760322, guid: 711c7d80717b2f34e8b6d0eb34555cf8, type: 3}
-      insertIndex: 1
-      addedObject: {fileID: 5476069683827592006}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 711c7d80717b2f34e8b6d0eb34555cf8, type: 3}
---- !u!114 &5476069683827592002 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7243498583314828500, guid: 711c7d80717b2f34e8b6d0eb34555cf8, type: 3}
-  m_PrefabInstance: {fileID: 5476069683827591998}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 818501989}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f76996a4a8542ea438097ca8092c56f0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Drakan
---- !u!114 &5476069683827592006
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 818501989}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6a948614831524143abc6c1ad8c42888, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::CameraShaker
-  AmplitudeMaxGain: 0.08
-  FrequencyMaxGain: 1.21
-  PowerCurveRiseTime: 0.13
-  PowerCurveFallbackTime: 0.89
-  Power:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    - serializedVersion: 3
-      time: 1
-      value: 1
-      inSlope: 2
-      outSlope: 2
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  PowerLerpCap: 1.34
-  Noise: {fileID: 1686368228}
 --- !u!1001 &6331348629325786513
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1454,6 +1337,10 @@ PrefabInstance:
     - target: {fileID: 7067454142570825065, guid: ad6b530a69fce5948ba552952c8f6371, type: 3}
       propertyPath: m_Name
       value: HealthCanvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 7067454142570825065, guid: ad6b530a69fce5948ba552952c8f6371, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7530174247362819495, guid: ad6b530a69fce5948ba552952c8f6371, type: 3}
       propertyPath: m_Pivot.x

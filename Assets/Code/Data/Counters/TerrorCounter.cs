@@ -33,7 +33,7 @@ public class TerrorCounter : Counter
         TerrorCap = level * LevelToTerrorMultiplier;
 
         Terror = _enemies.Alive.Sum(e => { return e is Enemy enemy ? enemy.Power : 0; });
-        Debug.Log($"Terror: {Terror}, TerrorCap: {TerrorCap}, TerrorCapWithThreshold: {TerrorCapWithThreshold}");
+        // Debug.Log($"Terror: {Terror}, TerrorCap: {TerrorCap}, TerrorCapWithThreshold: {TerrorCapWithThreshold}");
 
         Changed.Invoke();
     }

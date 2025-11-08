@@ -99,9 +99,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6907045065367547290}
+  - component: {fileID: 3113792518244536289}
   - component: {fileID: 2807712008296388430}
   - component: {fileID: 7243498583314828500}
   - component: {fileID: 3235121001526862544}
+  - component: {fileID: 8325492148388555428}
   m_Layer: 0
   m_Name: Character
   m_TagString: Untagged
@@ -125,6 +127,48 @@ Transform:
   - {fileID: 1869859811052685120}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3113792518244536289
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3178231214659760322}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a948614831524143abc6c1ad8c42888, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CameraShaker
+  AmplitudeMaxGain: 0.21
+  FrequencyMaxGain: 1.21
+  PowerCurveRiseTime: 0.13
+  PowerCurveFallbackTime: 0.89
+  Power:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 2
+      outSlope: 2
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  PowerLerpCap: 2
+  Noise: {fileID: 0}
 --- !u!114 &2807712008296388430
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -137,9 +181,41 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7547f036af94fa449bbb6db41ea42b2f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CharacterController
+  Character: {fileID: 7243498583314828500}
   Speed: 4
-  BulletPrefab: {fileID: 8626683483128194246, guid: 9c1794c52d0f4f547b6772f4f7a52c52, type: 3}
-  AttackInterval: 2
+  BulletPrefab: {fileID: 8800095632985489551, guid: 9c1794c52d0f4f547b6772f4f7a52c52, type: 3}
+  AttackInterval: 1.44
+  OnShoot:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 3113792518244536289}
+        m_TargetAssemblyTypeName: CameraShaker, Assembly-CSharp
+        m_MethodName: Shake
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  StartManualAim: 0
+  ToggleManualAim:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: DrawCrosshairSystem, Assembly-CSharp
+        m_MethodName: ShowCrosshair
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &7243498583314828500
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -169,3 +245,20 @@ MonoBehaviour:
   OnHealthChanged:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &8325492148388555428
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3178231214659760322}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54f1d15e08d2e1747b71553602e66937, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Physics
+  Magnitude: 1
+  Size: 0.5
+  Drag: 0
+  CanBePushed: 1
+  CanPushOthers: 0
