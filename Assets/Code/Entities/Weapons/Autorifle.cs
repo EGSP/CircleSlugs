@@ -1,4 +1,7 @@
 
+using UnityEngine;
+using UnityEngine.Events;
+
 public class Autorifle : Weapon
 {
     public Bullet BulletPrefab;
@@ -22,8 +25,20 @@ public class Autorifle : Weapon
             _activationTimer = 0;
     }
 
-    private void Activate()
+    public override void Activate(Character character, Vector3 direction)
     {
-        
+        if (!BulletPrefab) return;
+
+        var attackSpeedModifier = character.Modifiers.GetCounterOrNUll<AttackSpeedCounter>().AttackSpeedModifier;
+
+
+        if (_activationTimer <= 0)
+        {
+            _activationTimer = ActivationInterval * attackSpeedModifier;
+            var bullet = Instantiate(BulletPrefab, transform.position, Quaternion.identity);
+            bullet.Direction = direction.normalized;
+
+            OnActivate.Invoke();
+        }
     }
 }

@@ -1,4 +1,5 @@
 
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
@@ -27,7 +28,7 @@ public class WeaponSystem : GameSystem
     public UnityEvent<bool> ToggleManualAim = new();
     public UnityEvent OnShoot = new();
 
-    public bool DoAttack => _doHoldAttack || _doPressAttack;
+    public bool PerformAttack => _doHoldAttack || _doPressAttack;
 
     protected override void Awake()
     {
@@ -36,6 +37,8 @@ public class WeaponSystem : GameSystem
 
         Weapons = Game.TickRegistry.GetOrCreateCategory<Weapon>();
         Weapons.TickProcessor = this;
+
+        Weapons.Added.AddListener(OnWeaponAdded);
 
         Character = Game.TickRegistry.GetOrCreateCategory<Character>().AsFirstEntity<Character>();
 
@@ -47,6 +50,18 @@ public class WeaponSystem : GameSystem
         InputSystem.actions.FindAction("Attack").canceled += OnAttackCancelInput;
 
         InstWeapons();
+    }
+
+    private void OnWeaponAdded(ITick tick)
+    {
+        var weapon = tick as Weapon;
+        weapon.OnActivate.AddListener(ShootEvent);
+        weapon.OnTerminateMark.AddListener(() => weapon.OnActivate.RemoveListener(ShootEvent));
+
+        void ShootEvent()
+        {
+            OnShoot.Invoke();
+        }
     }
 
     private void InstWeapons()
@@ -134,6 +149,8 @@ public class WeaponSystem : GameSystem
         PositionWeapons();
         // MirrorWeaponsBasedOnCharacter();
         AimWeapons(deltaTime);
+
+        ActivateWeapons();
     }
 
     private void PositionWeapons()
@@ -166,6 +183,7 @@ public class WeaponSystem : GameSystem
         {
             var pointerPosition = InputSystem.actions.FindAction("PointerPosition").ReadValue<Vector2>();
             var pointerWorldPosition = Camera.main.ScreenToWorldPoint(pointerPosition);
+            pointerWorldPosition.z = 0;
 
             foreach (var weapon in Weapons.Entities.Cast<Weapon>())
             {
@@ -204,20 +222,6 @@ public class WeaponSystem : GameSystem
         }
     }
 
-    private void MirrorWeaponsBasedOnCharacter()
-    {
-        var character = Character.Entity;
-        if (character == null) return;
-
-        foreach (var weaponTick in Weapons.Entities)
-        {
-            var weapon = (Weapon)weaponTick;
-
-            var mirror = weapon.transform.position.x < character.Position.x;
-            weapon.SpriteRenderer.flipX = mirror;
-        }
-    }
-
     private void MirrorWeaponBasedOnDirection(Weapon weapon, Vector3 direction)
     {
         bool isFacingLeft = direction.x < 0;
@@ -231,6 +235,29 @@ public class WeaponSystem : GameSystem
         weapon.transform.rotation = Quaternion.RotateTowards(weapon.transform.rotation, rotation, rotationSpeed * deltaTime);
 
         MirrorWeaponBasedOnDirection(weapon, direction);
+        weapon.LastAimDirection = direction;
+
+    }
+
+    private void ActivateWeapons()
+    {
+        if (Character?.Entity is not Character character)
+            return;
+
+
+        if (ManualAttackWithManualAim && !PerformAttack)
+            return;
+
+        // Auto attack with manual aim
+        if (ManualAttackWithManualAim == false || PerformAttack)
+        {
+            UseAttackInput(); // Влияет только когда manual aim && attack
+
+            foreach (var weapon in Weapons.Entities.Cast<Weapon>())
+            {
+                weapon.Activate(character, weapon.LastAimDirection);
+            }
+        }
     }
 
     private void OnDrawGizmosSelected()

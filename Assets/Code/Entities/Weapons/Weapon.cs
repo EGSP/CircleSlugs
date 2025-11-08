@@ -12,7 +12,11 @@ public abstract class Weapon : MonoBehaviour, ITick
 
     public SpriteRenderer SpriteRenderer;
 
+    public UnityEvent OnActivate = new();
+
     public abstract bool CanActivate { get; }
+
+    public Vector3 LastAimDirection { get; set; }
 
 
     protected virtual void Awake()
@@ -25,8 +29,10 @@ public abstract class Weapon : MonoBehaviour, ITick
 
     public virtual void FixedTick(float deltaTime) { }
     public virtual void Tick(float deltaTime) { }
+
     public virtual void LateTick(float deltaTime) { }
 
+    public abstract void Activate(Character character, Vector3 direction);
 
     public void MarkForTermination()
     {

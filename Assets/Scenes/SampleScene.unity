@@ -887,6 +887,7 @@ MonoBehaviour:
   ManualAttackWithManualAim: 1
   WeaponsOffset: 2.2
   AimRotationSpeed: 360
+  ManualAimRotationSpeedMultiplier: 1.5
   WeaponsPrefabs:
   - {fileID: 1801648920432043660, guid: 9fc4dc9d7e5c19f41b6f2a7706f285f1, type: 3}
   ToggleManualAim:
