@@ -36,6 +36,8 @@ public class BulletSystem : GameSystem
 
                     entity.Health.Current -= bullet.Damage;
                     entity.Physics.Force(bullet.Direction * bullet.Punch, ForceType.Continuous, 0.5f);
+
+                    entity.Impact();
                     break;
                 }
             }

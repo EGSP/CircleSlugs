@@ -74,18 +74,6 @@ public class DeferredRemovalList<T>
         _removals.Clear();
     }
 
-    // Получение всех элементов основного списка
-    public IReadOnlyList<T> GetAll()
-    {
-        return _list.AsReadOnly();
-    }
-
-    // Получение элементов, помеченных на удаление
-    public IReadOnlyList<T> GetMarkedForRemoval()
-    {
-        return _removals.AsReadOnly();
-    }
-
     // Перебор элементов основного списка
     public IEnumerator<T> GetEnumerator()
     {

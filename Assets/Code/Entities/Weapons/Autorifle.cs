@@ -35,7 +35,7 @@ public class Autorifle : Weapon
         if (_activationTimer <= 0)
         {
             _activationTimer = ActivationInterval * attackSpeedModifier;
-            var bullet = Instantiate(BulletPrefab, transform.position, Quaternion.identity);
+            var bullet = Instantiate(BulletPrefab, GetMuzzlePosition(), Quaternion.identity);
             bullet.Direction = direction.normalized;
 
             OnActivate.Invoke();

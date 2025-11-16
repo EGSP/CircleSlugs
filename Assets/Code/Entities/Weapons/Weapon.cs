@@ -12,6 +12,8 @@ public abstract class Weapon : MonoBehaviour, ITick
 
     public SpriteRenderer SpriteRenderer;
 
+    public Transform Muzzle;
+
     public UnityEvent OnActivate = new();
 
     public abstract bool CanActivate { get; }
@@ -56,5 +58,11 @@ public abstract class Weapon : MonoBehaviour, ITick
     private void Reset()
     {
         SpriteRenderer ??= GetComponentInChildren<SpriteRenderer>();
+    }
+
+
+    protected Vector3 GetMuzzlePosition()
+    {
+        return Muzzle?.position ?? transform.position;
     }
 }

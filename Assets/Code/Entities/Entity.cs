@@ -13,6 +13,8 @@ public abstract class Entity : MonoBehaviour, ITick
     public Health Health { get; protected set; }
     public Physics Physics { get; protected set; }
 
+    public UnityEvent OnImpact = new UnityEvent();
+
     protected virtual void Awake()
     {
         Position = transform.position;
@@ -55,5 +57,10 @@ public abstract class Entity : MonoBehaviour, ITick
             OnTerminate?.Invoke();
             Destroy(gameObject);
         }
+    }
+
+    public void Impact()
+    {
+        OnImpact?.Invoke();
     }
 }

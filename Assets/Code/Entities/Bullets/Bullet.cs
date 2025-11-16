@@ -10,6 +10,7 @@ public abstract class Bullet : Entity
 
     public float Punch = 6f;
 
+    public Vector3 InitalRotation;
     public Vector3 Direction { get; set; }
 
     private float _timer = 0f;
@@ -28,6 +29,8 @@ public abstract class Bullet : Entity
         }
 
         base.Tick(deltaTime);
+
+        transform.rotation = Quaternion.LookRotation(Vector3.forward, Quaternion.Euler(InitalRotation) * Direction);
         Position += deltaTime * Speed * Direction;
     }
 

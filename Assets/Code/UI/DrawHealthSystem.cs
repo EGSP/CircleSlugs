@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class DrawHealthSystem : GameSystem
 {
+    public bool ShowHealthbars = false;
     public DrawHealthbar HealthbarPrefab;
 
     public Vector3 Offset;
@@ -30,6 +31,8 @@ public class DrawHealthSystem : GameSystem
 
     protected void Start()
     {
+        if(!ShowHealthbars) return;
+
         // Проверяем уникальность, потому что до вызова Start - категория могла обновиться и вызвать DrawHealthbar
         foreach (var enemy in EnemyCategory.Entities.Cast<Enemy>())
         {
@@ -39,6 +42,7 @@ public class DrawHealthSystem : GameSystem
 
     public override void LateTick(float deltaTime)
     {
+        if (!ShowHealthbars) return;
         // Debug.Log("DrawHealthSystem.LateTick");
         MoveHealthbars();
     }
